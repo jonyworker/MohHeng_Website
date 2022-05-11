@@ -1,0 +1,16 @@
+@import "_base_variables";
+@import "_base_reset";
+@import "_base_my_reset";
+
+// 載入bootstrap grid
+@import "bootstrap-grid";
+
+// 載入基礎設定
+@import "_base_typography";
+
+// 載入元件設定
+@import "component_header";
+@import "component_footer";
+
+// 載入頁面設定
+@import "layout_index";

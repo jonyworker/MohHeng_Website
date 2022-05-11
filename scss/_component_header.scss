@@ -1,0 +1,99 @@
+
+/*///////////////////////////////
+===== TOP-BAR Section START =====
+///////////////////////////////*/
+
+
+.top-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+/*----- logo-set -----*/
+.logo-set {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo-set h1 {
+  width: 72px;
+  margin-right: 24px;
+}
+.logo-set p {
+  font-family: $font-Mulish;
+  // font-size: 24px;
+  // line-height: 29px;
+  font-weight: 300;
+}
+
+/*----- main-nav -----*/
+.main-nav {
+  display: flex;
+}
+.main-nav a {
+  display: block;
+  padding: 0 12px;
+  font-family: $font-Mulish;
+  // font-size: 24px;
+  // line-height: 29px;
+  font-weight: 500;
+}
+
+
+.main-nav-toggler {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer;
+
+
+}
+
+@media screen and (min-width: 576px) {
+  .logo-set h1 {
+    width: 72px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  
+  
+}
+@media screen and (min-width: 992px) {
+  
+}
+@media screen and (min-width: 1200px) {
+  .logo-set h1 {
+    width: 72px;
+    margin-right: 16px;
+  }
+  .logo-set p {
+    font-size: 18px;
+    line-height: 21.75px;
+  }
+  .main-nav a {
+    font-size: 18px;
+    line-height: 21.75px;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1900px) {
+  .logo-set h1 {
+    width: 72px;
+    margin-right: 24px;
+  }
+  .logo-set p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main-nav a {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
