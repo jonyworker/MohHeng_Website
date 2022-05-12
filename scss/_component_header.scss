@@ -2,8 +2,7 @@
 /*///////////////////////////////
 ===== TOP-BAR Section START =====
 ///////////////////////////////*/
-
-
+/*----- top-bar-content -----*/
 .top-bar-content {
   display: flex;
   align-items: center;
@@ -17,45 +16,115 @@
 }
 .logo-set h1 {
   width: 72px;
-  margin-right: 24px;
 }
 .logo-set p {
   font-family: $font-Mulish;
-  // font-size: 24px;
-  // line-height: 29px;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
+  margin-left: 24px;
 }
-
 /*----- main-nav -----*/
-.main-nav {
+.top-bar-content {
+  position: relative;
+}
+.main-nav-content {
   display: flex;
 }
 .main-nav a {
   display: block;
   padding: 0 12px;
   font-family: $font-Mulish;
-  // font-size: 24px;
-  // line-height: 29px;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: 500;
 }
-
-
-.main-nav-toggler {
-  background-color: DodgerBlue; /* Blue background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 12px 16px; /* Some padding */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer;
-
-
+/*----- main-nav toggle -----*/
+#menu-toggle {
+  display: none;
 }
+.main-nav-toggler {
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  border-radius: 8px;
+  padding: 8px; 
+  cursor: pointer;
+}
+.main-nav-toggler .icon-content {
+  width: 24px;
+  height: 24px;
+} 
 
-@media screen and (min-width: 576px) {
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+@media screen and (max-width: 1536px) {
   .logo-set h1 {
     width: 72px;
-    margin-right: 16px;
   }
+  .logo-set p {
+    font-size: 18px;
+    line-height: 21.75px;
+    margin-left: 16px;
+  }
+  .main-nav a {
+    font-size: 18px;
+    line-height: 21.75px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  
+}
+@media screen and (max-width: 992px) {
+  /*----- main-nav -----*/
+  .main-nav-content li {
+    border-bottom: 1px solid #000;
+  }
+  /*----- main-nav toggle -----*/
+  #menu-toggle:checked ~ .main-nav {
+    display: block;
+    position: absolute;
+    background-color: $color-mh-red;
+    top: 100%;
+    left: -12px;
+    right: -12px;
+    padding: 0 24px;
+  }
+  #menu-toggle:checked ~ .main-nav .main-nav-content {
+    flex-direction: column;
+  }
+  #menu-toggle:checked ~ .main-nav .main-nav-content li a {
+    padding: 20px 24px;
+    color: $color-white;
+  }
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+  .logo-set h1 {
+    width: 72px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+  // .logo-set h1 {
+  //   width: 72px;
+  //   margin-right: 16px;
+  // }
 }
 @media screen and (min-width: 768px) {
   
@@ -65,35 +134,30 @@
   
 }
 @media screen and (min-width: 1200px) {
-  .logo-set h1 {
-    width: 72px;
-    margin-right: 16px;
-  }
-  .logo-set p {
-    font-size: 18px;
-    line-height: 21.75px;
-  }
-  .main-nav a {
-    font-size: 18px;
-    line-height: 21.75px;
-  }
+  // .logo-set h1 {
+  //   width: 72px;
+  //   margin-right: 16px;
+  // }
+  // .logo-set p {
+  //   font-size: 18px;
+  //   line-height: 21.75px;
+  // }
+  // .main-nav a {
+  //   font-size: 18px;
+  //   line-height: 21.75px;
+  // }
 }
-
-
-
-
-
 @media screen and (min-width: 1900px) {
-  .logo-set h1 {
-    width: 72px;
-    margin-right: 24px;
-  }
-  .logo-set p {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .main-nav a {
-    font-size: 24px;
-    line-height: 29px;
-  }
+  // .logo-set h1 {
+  //   width: 72px;
+  //   margin-right: 24px;
+  // }
+  // .logo-set p {
+  //   font-size: 24px;
+  //   line-height: 29px;
+  // }
+  // .main-nav a {
+  //   font-size: 24px;
+  //   line-height: 29px;
+  // }
 }

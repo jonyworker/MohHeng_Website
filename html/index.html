@@ -22,10 +22,14 @@
 
 </head>
 <body>
+  
   <!-- TOP-BAR Section -->
   <header class="top-bar-section">
-    <div class="container  ">
+    <div class="container-fluid container-1920">
       <div class="top-bar-content">
+        <!-- menu-toggle 控制開關 -->
+        <input type="checkbox" id="menu-toggle">
+        
         <!-- logo-set -->
         <a class="logo-set" href="#" alt="click to main page" title="Visit the main page">
           <h1>
@@ -36,14 +40,14 @@
           <p class="d-none d-md-block">Moh Heng Company Sdn Bhd</p>
         </a>
         
-        <button class="main-nav-toggler d-lg-none" type="button" >
-          <span class="material-symbols-outlined">
-            menu
-            </span>
-        </button>
+        <label class="main-nav-toggler d-lg-none" for="menu-toggle">
+          <div class="icon-content">
+            <img src="../image/icon_menu_black.svg" alt="">
+          </div>
+        </label>
         <!-- 導覽列 nav -->
-        <nav class="d-none d-lg-block">
-          <ul class="main-nav">
+        <nav class="d-none d-lg-block main-nav ">
+          <ul class="main-nav-content">
             <li><a href="#" alt="home">Home</a></li>
             <li><a href="#ourstory-id" alt="service">Our Story</a></li>
             <li><a href="#ourservice-id" alt="gallery">Our Service</a></li>

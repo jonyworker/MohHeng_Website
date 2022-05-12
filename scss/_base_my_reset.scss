@@ -6,8 +6,12 @@ a {
   color: $color-black;
 }
 * {
-	outline: 1px solid #5a7;
+	// outline: 1px solid #5a7;
 }
 .container-1920 {
   max-width: 1920px;
+}
+img {
+	width: 100%;
+	vertical-align: middle;
 }
