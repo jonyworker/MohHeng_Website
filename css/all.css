@@ -5196,6 +5196,10 @@ img {
     font-size: 39px;
     line-height: 48px;
   }
+  .intro-primary-text h2,
+  .intro-primary-text p {
+    margin-bottom: 56px;
+  }
   .intro-primary-text p,
   .intro-primary-text a {
     font-size: 21px;
@@ -5206,40 +5210,20 @@ img {
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  /*----- main-nav -----*/
-  .main-nav-content li {
-    border-bottom: 1px solid #000;
+  .intro-primary-text {
+    margin: 32px 0;
+    padding: 0 20px;
   }
-  /*----- main-nav toggle -----*/
-  #menu-toggle:checked ~ .main-nav {
-    display: block;
-    position: absolute;
-    background-color: #D51826;
-    top: 100%;
-    left: -12px;
-    right: -12px;
-    padding: 0 24px;
-  }
-  #menu-toggle:checked ~ .main-nav .main-nav-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #menu-toggle:checked ~ .main-nav .main-nav-content li a {
-    padding: 20px 24px;
-    color: #fff;
+  .intro-primary-pic {
+    margin: 0 20px;
   }
 }
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .logo-set h1 {
-    width: 72px;
-  }
-  .top-bar-content {
-    padding: 20px 0;
+  .intro-primary-pic {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=all.css.map */

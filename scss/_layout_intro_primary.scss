@@ -59,6 +59,10 @@
     font-size: 39px; //原尺寸52px乘0.75
     line-height: 48px; //原尺寸64px乘0.75
   }
+  .intro-primary-text h2,
+  .intro-primary-text p {
+    margin-bottom: 56px;
+  }
   .intro-primary-text p,
   .intro-primary-text a {
     font-size: 21px; //原尺寸28px乘0.75
@@ -72,30 +76,13 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-
-  /*----- main-nav -----*/
-  .main-nav-content li {
-    border-bottom: 1px solid #000;
+  .intro-primary-text {
+    margin: 32px 0;
+    padding: 0 20px;
   }
 
-  /*----- main-nav toggle -----*/
-  #menu-toggle:checked~.main-nav {
-    display: block;
-    position: absolute;
-    background-color: $color-mh-red;
-    top: 100%;
-    left: -12px;
-    right: -12px;
-    padding: 0 24px;
-  }
-
-  #menu-toggle:checked~.main-nav .main-nav-content {
-    flex-direction: column;
-  }
-
-  #menu-toggle:checked~.main-nav .main-nav-content li a {
-    padding: 20px 24px;
-    color: $color-white;
+  .intro-primary-pic {
+    margin: 0 20px;
   }
 
 }
@@ -105,11 +92,7 @@
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .logo-set h1 {
-    width: 72px;
-  }
-
-  .top-bar-content {
-    padding: 20px 0;
+  .intro-primary-pic {
+    margin: 0 ;
   }
 }
