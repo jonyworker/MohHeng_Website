@@ -5039,10 +5039,8 @@ img {
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
+/*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .logo-set h1 {
-    width: 72px;
-  }
   .logo-set p {
     font-size: 18px;
     line-height: 21.75px;
@@ -5054,6 +5052,8 @@ img {
   }
 }
 
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
   /*----- main-nav -----*/
   .main-nav-content li {
@@ -5081,21 +5081,165 @@ img {
   }
 }
 
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .logo-set h1 {
     width: 72px;
   }
+  .top-bar-content {
+    padding: 20px 0;
+  }
+}
+
+/*////////////////////////////////////
+===== Banner-Video Section START =====
+////////////////////////////////////*/
+.banner-video-content {
+  padding: 32px 20px;
 }
 
 .video-box {
   width: 100%;
   aspect-ratio: 560/315;
   position: relative;
+  border-top-right-radius: 52px;
+  overflow: hidden;
 }
 
 .video-box iframe {
   width: 100%;
   height: 100%;
   vertical-align: top;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .banner-video-content {
+    padding: 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .banner-video-content {
+    padding: 20px 0;
+  }
+}
+
+/*////////////////////////////////////
+===== Intro-Primary Section START =====
+////////////////////////////////////*/
+/*----- intro-section 灰底 -----*/
+.intro-primary-section.bg-grey {
+  background-color: #f2f2f2;
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-primary-pic {
+  border-top-right-radius: 52px;
+  aspect-ratio: 832/952;
+  overflow: hidden;
+  background-color: #f00;
+}
+
+.intro-primary-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-primary-text h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #D51826;
+  margin-bottom: 80px;
+}
+
+.intro-primary-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 80px;
+}
+
+.intro-primary-text a {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: #D51826;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .intro-primary-text h2 {
+    font-size: 39px;
+    line-height: 48px;
+  }
+  .intro-primary-text p,
+  .intro-primary-text a {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  /*----- main-nav -----*/
+  .main-nav-content li {
+    border-bottom: 1px solid #000;
+  }
+  /*----- main-nav toggle -----*/
+  #menu-toggle:checked ~ .main-nav {
+    display: block;
+    position: absolute;
+    background-color: #D51826;
+    top: 100%;
+    left: -12px;
+    right: -12px;
+    padding: 0 24px;
+  }
+  #menu-toggle:checked ~ .main-nav .main-nav-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu-toggle:checked ~ .main-nav .main-nav-content li a {
+    padding: 20px 24px;
+    color: #fff;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .logo-set h1 {
+    width: 72px;
+  }
+  .top-bar-content {
+    padding: 20px 0;
+  }
 }
 /*# sourceMappingURL=all.css.map */

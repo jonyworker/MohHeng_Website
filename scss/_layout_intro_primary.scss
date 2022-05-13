@@ -1,0 +1,115 @@
+
+/*////////////////////////////////////
+===== Intro-Primary Section START =====
+////////////////////////////////////*/
+/*----- intro-section 灰底 -----*/
+.intro-primary-section.bg-grey {
+  background-color: $color-light-grey;
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-primary-pic {
+  border-top-right-radius: 52px;
+  aspect-ratio: 832/952;
+  overflow: hidden;
+  background-color: #f00;
+}
+.intro-primary-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-primary-text h2 {
+  font-family: $font-Mulish;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 700;
+  color: $color-mh-red;
+  margin-bottom: 80px;
+}
+.intro-primary-text p {
+  font-family: $font-DMsans;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  color: $color-black;
+  margin-bottom: 80px;
+}
+.intro-primary-text a {
+  display: inline-block;
+  font-family: $font-DMsans;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  color: $color-white;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: $color-mh-red;
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .intro-primary-text h2 {
+    font-size: 39px; //原尺寸52px乘0.75
+    line-height: 48px; //原尺寸64px乘0.75
+  }
+  .intro-primary-text p,
+  .intro-primary-text a {
+    font-size: 21px; //原尺寸28px乘0.75
+    line-height: 30px; //原尺寸40px乘0.75
+  }
+
+}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+
+  /*----- main-nav -----*/
+  .main-nav-content li {
+    border-bottom: 1px solid #000;
+  }
+
+  /*----- main-nav toggle -----*/
+  #menu-toggle:checked~.main-nav {
+    display: block;
+    position: absolute;
+    background-color: $color-mh-red;
+    top: 100%;
+    left: -12px;
+    right: -12px;
+    padding: 0 24px;
+  }
+
+  #menu-toggle:checked~.main-nav .main-nav-content {
+    flex-direction: column;
+  }
+
+  #menu-toggle:checked~.main-nav .main-nav-content li a {
+    padding: 20px 24px;
+    color: $color-white;
+  }
+
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .logo-set h1 {
+    width: 72px;
+  }
+
+  .top-bar-content {
+    padding: 20px 0;
+  }
+}

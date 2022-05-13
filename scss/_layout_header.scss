@@ -60,23 +60,23 @@
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
+/*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .logo-set h1 {
-    width: 72px;
-  }
   .logo-set p {
-    font-size: 18px;
-    line-height: 21.75px;
+    font-size: 18px; //原尺寸24px乘0.75
+    line-height: 21.75px; //原尺寸29px乘0.75
     margin-left: 16px;
   }
   .main-nav a {
-    font-size: 18px;
-    line-height: 21.75px;
+    font-size: 18px; //原尺寸24px乘0.75
+    line-height: 21.75px; //原尺寸24px乘0.75
   }
 }
-@media screen and (max-width: 1200px) {
-  
-}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px){}
+
+/*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
   /*----- main-nav -----*/
   .main-nav-content li {
@@ -101,12 +101,19 @@
   }
 
 }
+
+/*----- max-width 768 -----*/
 @media screen and (max-width: 768px) {
 
 }
+
+/*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .logo-set h1 {
     width: 72px;
+  }
+  .top-bar-content {
+    padding: 20px 0;
   }
 }
 
@@ -115,49 +122,3 @@
 
 
 
-
-
-
-
-
-@media screen and (min-width: 576px) {
-  // .logo-set h1 {
-  //   width: 72px;
-  //   margin-right: 16px;
-  // }
-}
-@media screen and (min-width: 768px) {
-  
-  
-}
-@media screen and (min-width: 992px) {
-  
-}
-@media screen and (min-width: 1200px) {
-  // .logo-set h1 {
-  //   width: 72px;
-  //   margin-right: 16px;
-  // }
-  // .logo-set p {
-  //   font-size: 18px;
-  //   line-height: 21.75px;
-  // }
-  // .main-nav a {
-  //   font-size: 18px;
-  //   line-height: 21.75px;
-  // }
-}
-@media screen and (min-width: 1900px) {
-  // .logo-set h1 {
-  //   width: 72px;
-  //   margin-right: 24px;
-  // }
-  // .logo-set p {
-  //   font-size: 24px;
-  //   line-height: 29px;
-  // }
-  // .main-nav a {
-  //   font-size: 24px;
-  //   line-height: 29px;
-  // }
-}
