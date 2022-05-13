@@ -5211,8 +5211,7 @@ img {
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
   .intro-primary-text {
-    margin: 20px 0;
-    padding: 0 20px;
+    margin: 20px;
   }
   .intro-primary-pic {
     margin: 0 20px;
@@ -5222,6 +5221,9 @@ img {
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
+  .intro-primary-text {
+    margin: 20px 0;
+  }
   .intro-primary-pic {
     margin: 0;
   }
