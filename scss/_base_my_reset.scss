@@ -6,7 +6,7 @@ a {
   color: $color-black;
 }
 * {
-	outline: 1px solid #5a7;
+	// outline: 1px solid #5a7;
 }
 .container-1920 {
   max-width: 1920px;
@@ -14,4 +14,16 @@ a {
 img {
 	width: 100%;
 	vertical-align: middle;
+}
+main {
+	margin-top: 81.5px;
+}
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+	main {
+		margin-top: 83px;
+	}
 }

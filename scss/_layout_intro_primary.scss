@@ -7,6 +7,10 @@
   background-color: $color-light-grey;
 }
 
+.intro-primary-content {
+  padding: 64px 0;
+}
+
 /*----- intro-section 圖片 -----*/
 .intro-primary-pic {
   border-top-right-radius: 52px;
@@ -22,7 +26,7 @@
 
 /*----- intro-section 文字 -----*/
 .intro-primary-text h2 {
-  font-family: $font-Mulish;
+  font-family: $font-Century-Gothic;
   font-size: 52px;
   line-height: 64px;
   font-weight: 700;
@@ -33,7 +37,7 @@
   font-family: $font-DMsans;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 400;
   color: $color-black;
   margin-bottom: 80px;
 }
@@ -42,7 +46,7 @@
   font-family: $font-DMsans;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 400;
   color: $color-white;
   padding: 12px 24px;
   border-radius: 100px;
@@ -68,7 +72,6 @@
     font-size: 21px; //原尺寸28px乘0.75
     line-height: 30px; //原尺寸40px乘0.75
   }
-
 }
 
 /*----- max-width 1200 -----*/
@@ -76,10 +79,12 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-primary-text {
-    margin: 20px;
+  .intro-primary-content {
+      padding: 20px 0;
   }
-
+  .intro-primary-text {
+    margin: 0 20px 20px 20px;
+  }
   .intro-primary-pic {
     margin: 0 20px;
   }

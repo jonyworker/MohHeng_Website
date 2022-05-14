@@ -74,10 +74,6 @@ a {
   color: #000;
 }
 
-* {
-  outline: 1px solid #5a7;
-}
-
 .container-1920 {
   max-width: 1920px;
 }
@@ -85,6 +81,20 @@ a {
 img {
   width: 100%;
   vertical-align: middle;
+}
+
+main {
+  margin-top: 81.5px;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 83px;
+  }
 }
 
 /*!
@@ -4964,6 +4974,16 @@ img {
 /*///////////////////////////////
 ===== TOP-BAR Section START =====
 ///////////////////////////////*/
+/*----- top-bar-section -----*/
+.top-bar-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  border-bottom: 1px solid #70707067;
+}
+
 /*----- top-bar-content -----*/
 .top-bar-content {
   display: -webkit-box;
@@ -4991,10 +5011,10 @@ img {
 }
 
 .logo-set p {
-  font-family: "Mulish", sans-serif;
+  font-family: "century-gothic", sans-serif;
   font-size: 24px;
   line-height: 29px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 24px;
 }
 
@@ -5012,10 +5032,10 @@ img {
 .main-nav a {
   display: block;
   padding: 0 12px;
-  font-family: "Mulish", sans-serif;
+  font-family: "century-gothic", sans-serif;
   font-size: 24px;
   line-height: 29px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /*----- main-nav toggle -----*/
@@ -5092,6 +5112,24 @@ img {
   }
 }
 
+/*///////////////////////////////
+===== Footer Section START =====
+///////////////////////////////*/
+/*----- Footer-content -----*/
+.footer-section {
+  height: 200px;
+  background-color: #f00;
+}
+
+/*----- logo-set -----*/
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 /*////////////////////////////////////
 ===== Banner-Video Section START =====
 ////////////////////////////////////*/
@@ -5107,29 +5145,66 @@ img {
   overflow: hidden;
 }
 
-.video-box iframe {
+.video-box video {
   width: 100%;
   height: 100%;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+.video-box h2 {
+  position: absolute;
+  left: 80px;
+  bottom: 72px;
+  font-family: "century-gothic", sans-serif;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #fff;
 }
 
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .video-box h2 {
+    left: 56px;
+    bottom: 40px;
+    font-size: 39px;
+    line-height: 48px;
+  }
+}
+
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
   .banner-video-content {
     padding: 20px;
   }
+  .video-box h2 {
+    left: 32px;
+    bottom: 24px;
+  }
 }
 
 /*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .video-box h2 {
+    left: 16px;
+    bottom: 16px;
+    font-size: 29.25px;
+    line-height: 36px;
+  }
+}
+
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .banner-video-content {
     padding: 20px 0;
+  }
+  .video-box h2 {
+    font-size: 22.125px;
+    line-height: 27px;
   }
 }
 
@@ -5139,6 +5214,10 @@ img {
 /*----- intro-section 灰底 -----*/
 .intro-primary-section.bg-grey {
   background-color: #f2f2f2;
+}
+
+.intro-primary-content {
+  padding: 64px 0;
 }
 
 /*----- intro-section 圖片 -----*/
@@ -5158,7 +5237,7 @@ img {
 
 /*----- intro-section 文字 -----*/
 .intro-primary-text h2 {
-  font-family: "Mulish", sans-serif;
+  font-family: "century-gothic", sans-serif;
   font-size: 52px;
   line-height: 64px;
   font-weight: 700;
@@ -5170,7 +5249,7 @@ img {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000;
   margin-bottom: 80px;
 }
@@ -5180,7 +5259,7 @@ img {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   padding: 12px 24px;
   border-radius: 100px;
@@ -5210,8 +5289,11 @@ img {
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
+  .intro-primary-content {
+    padding: 20px 0;
+  }
   .intro-primary-text {
-    margin: 20px;
+    margin: 0 20px 20px 20px;
   }
   .intro-primary-pic {
     margin: 0 20px;
