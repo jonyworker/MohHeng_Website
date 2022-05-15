@@ -5117,7 +5117,7 @@ main {
 .footer-section {
   background-color: #fff;
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
+  font-size: calc(1rem + .3vw);
   line-height: 1.43;
   font-weight: 400;
   color: #000;
@@ -5224,6 +5224,9 @@ main {
 @media screen and (max-width: 1536px) {
   .footer-content {
     padding: 146px 0 70px 0;
+  }
+  .footer-logo {
+    margin-bottom: 80px;
   }
 }
 
