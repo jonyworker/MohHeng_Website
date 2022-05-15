@@ -28,7 +28,7 @@
 .intro-primary-text h2 {
   font-family: $font-Century-Gothic;
   font-size: 52px;
-  line-height: 64px;
+  line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
   margin-bottom: 80px;
@@ -36,7 +36,7 @@
 .intro-primary-text p {
   font-family: $font-DMsans;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.43;
   font-weight: 400;
   color: $color-black;
   margin-bottom: 80px;
@@ -45,7 +45,7 @@
   display: inline-block;
   font-family: $font-DMsans;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.43;
   font-weight: 400;
   color: $color-white;
   padding: 12px 24px;
@@ -61,7 +61,6 @@
 @media screen and (max-width: 1536px) {
   .intro-primary-text h2 {
     font-size: 39px; //原尺寸52px乘0.75
-    line-height: 48px; //原尺寸64px乘0.75
   }
   .intro-primary-text h2,
   .intro-primary-text p {
@@ -70,7 +69,6 @@
   .intro-primary-text p,
   .intro-primary-text a {
     font-size: 21px; //原尺寸28px乘0.75
-    line-height: 30px; //原尺寸40px乘0.75
   }
 }
 

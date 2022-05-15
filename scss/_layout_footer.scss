@@ -4,27 +4,173 @@
 
 /*----- Footer-content -----*/
 .footer-section {
-  height: 200px;
-  background-color: #f00;
+  // height: 1000px;
+  background-color: #fff;
+  font-family: $font-DMsans;
+  font-size: 28px;
+  line-height: 1.43;
+  font-weight: 400;
+  color: $color-black;
+}
+.footer-content {
+  padding: 260px 0 126px 0;
 }
 
-/*----- logo-set -----*/
+/*----- footer logo -----*/
+.footer-logo {
+  display: block;
+  width: 147.3px;
+  margin-right: auto;
+  margin-bottom: 134px;
+}
 
+/*----- contact-set -----*/
+.contact-set {
+  display: flex;
+  margin-bottom: 90px;
+}
+.contact-us {
+  width: 100%;
+}
+.social-menu {
+  display: flex;
+  flex-direction: column;
+}
+.social-menu p {
+  margin-bottom: 28px;
+  text-align: end;
+}
+.social-menu-list {
+  display: flex;
+  align-items: flex-end;
+}
+.social-menu-list li a {
+  display: block;
+}
+.social-menu-list li + li {
+  margin-left: 26px;
+}
+.social-menu-list .social-link-fb {
+  width: 56px;
+}
+.social-menu-list .social-link-gmail {
+  width: 65px;
+}
+/*----- about-set -----*/
+.about-set {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 40px;
+}
+
+
+/*----- bottom-bar -----*/
+.bottom-bar {
+  display: flex;
+  font-family: $font-DMsans;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 400;
+  color: $color-black;
+}
+.privacy-teamAndPolicies {
+  display: flex;
+  margin-right: auto;
+}
+.privacy-teamAndPolicies a + a {
+    margin-left: 100px;
+}
 
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
-@media screen and (max-width: 1536px) {}
+@media screen and (max-width: 1536px) {
+  .footer-section {
+      font-size: 21px; //原尺寸28px乘0.75
+  }
+  .footer-content {
+    padding: 195px 0 94.5px 0;
+  }
+}
 
 /*----- max-width 1200 -----*/
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    padding: 146px 0 70px 0;
+  }
+}
 
 /*----- max-width 992 -----*/
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .footer-content {
+    padding: 80px 0;
+  }
+  .bottom-bar {
+    font-size: 14px;
+  }
+}
 
 /*----- max-width 768 -----*/
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .privacy-teamAndPolicies a+a {
+      margin-left: 24px;
+    }
+}
 
 /*----- max-width 576 -----*/
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .footer-content {
+    padding: 40px 0;
+  }
+  .footer-logo {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  /* contact-set */
+  .contact-set {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .contact-us {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .social-menu {
+    padding: 10px 0;
+  }
+  .social-menu p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .social-menu-list .social-link-fb {
+    width: 46px;
+  }
+
+  .social-menu-list .social-link-gmail {
+    width: 55px;
+  }
+  /* about-set */
+  .about-set {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .about-set li {
+    padding: 10px 0;
+  }
+  /* bottom-bar */
+  .bottom-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .privacy-teamAndPolicies {
+    margin-right: 0;
+  }
+
+  .privacy-teamAndPolicies a+a {
+    margin-left: 16px;
+  }
+}

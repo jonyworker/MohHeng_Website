@@ -5013,7 +5013,7 @@ main {
 .logo-set p {
   font-family: "century-gothic", sans-serif;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.21;
   font-weight: 400;
   margin-left: 24px;
 }
@@ -5034,7 +5034,7 @@ main {
   padding: 0 12px;
   font-family: "century-gothic", sans-serif;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.21;
   font-weight: 700;
 }
 
@@ -5063,12 +5063,10 @@ main {
 @media screen and (max-width: 1536px) {
   .logo-set p {
     font-size: 18px;
-    line-height: 21.75px;
     margin-left: 16px;
   }
   .main-nav a {
     font-size: 18px;
-    line-height: 21.75px;
   }
 }
 
@@ -5117,19 +5115,210 @@ main {
 ///////////////////////////////*/
 /*----- Footer-content -----*/
 .footer-section {
-  height: 200px;
-  background-color: #f00;
+  background-color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.43;
+  font-weight: 400;
+  color: #000;
 }
 
-/*----- logo-set -----*/
+.footer-content {
+  padding: 260px 0 126px 0;
+}
+
+/*----- footer logo -----*/
+.footer-logo {
+  display: block;
+  width: 147.3px;
+  margin-right: auto;
+  margin-bottom: 134px;
+}
+
+/*----- contact-set -----*/
+.contact-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.contact-us {
+  width: 100%;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-menu p {
+  margin-bottom: 28px;
+  text-align: end;
+}
+
+.social-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social-menu-list li a {
+  display: block;
+}
+
+.social-menu-list li + li {
+  margin-left: 26px;
+}
+
+.social-menu-list .social-link-fb {
+  width: 56px;
+}
+
+.social-menu-list .social-link-gmail {
+  width: 65px;
+}
+
+/*----- about-set -----*/
+.about-set {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #70707067;
+  margin-bottom: 40px;
+}
+
+/*----- bottom-bar -----*/
+.bottom-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 400;
+  color: #000;
+}
+
+.privacy-teamAndPolicies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.privacy-teamAndPolicies a + a {
+  margin-left: 100px;
+}
+
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .footer-section {
+    font-size: 21px;
+  }
+  .footer-content {
+    padding: 195px 0 94.5px 0;
+  }
+}
+
 /*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    padding: 146px 0 70px 0;
+  }
+}
+
 /*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .footer-content {
+    padding: 80px 0;
+  }
+  .bottom-bar {
+    font-size: 14px;
+  }
+}
+
 /*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .privacy-teamAndPolicies a + a {
+    margin-left: 24px;
+  }
+}
+
 /*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .footer-content {
+    padding: 40px 0;
+  }
+  .footer-logo {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  /* contact-set */
+  .contact-set {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .contact-us {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .social-menu {
+    padding: 10px 0;
+  }
+  .social-menu p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .social-menu-list .social-link-fb {
+    width: 46px;
+  }
+  .social-menu-list .social-link-gmail {
+    width: 55px;
+  }
+  /* about-set */
+  .about-set {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .about-set li {
+    padding: 10px 0;
+  }
+  /* bottom-bar */
+  .bottom-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .privacy-teamAndPolicies {
+    margin-right: 0;
+  }
+  .privacy-teamAndPolicies a + a {
+    margin-left: 16px;
+  }
+}
+
 /*////////////////////////////////////
 ===== Banner-Video Section START =====
 ////////////////////////////////////*/
@@ -5157,7 +5346,7 @@ main {
   bottom: 72px;
   font-family: "century-gothic", sans-serif;
   font-size: 52px;
-  line-height: 64px;
+  line-height: 1.23;
   font-weight: 700;
   color: #fff;
 }
@@ -5171,7 +5360,6 @@ main {
     left: 56px;
     bottom: 40px;
     font-size: 39px;
-    line-height: 48px;
   }
 }
 
@@ -5193,7 +5381,6 @@ main {
     left: 16px;
     bottom: 16px;
     font-size: 29.25px;
-    line-height: 36px;
   }
 }
 
@@ -5204,7 +5391,6 @@ main {
   }
   .video-box h2 {
     font-size: 22.125px;
-    line-height: 27px;
   }
 }
 
@@ -5239,7 +5425,7 @@ main {
 .intro-primary-text h2 {
   font-family: "century-gothic", sans-serif;
   font-size: 52px;
-  line-height: 64px;
+  line-height: 1.23;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 80px;
@@ -5248,7 +5434,7 @@ main {
 .intro-primary-text p {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.43;
   font-weight: 400;
   color: #000;
   margin-bottom: 80px;
@@ -5258,7 +5444,7 @@ main {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.43;
   font-weight: 400;
   color: #fff;
   padding: 12px 24px;
@@ -5273,7 +5459,6 @@ main {
 @media screen and (max-width: 1536px) {
   .intro-primary-text h2 {
     font-size: 39px;
-    line-height: 48px;
   }
   .intro-primary-text h2,
   .intro-primary-text p {
@@ -5282,7 +5467,6 @@ main {
   .intro-primary-text p,
   .intro-primary-text a {
     font-size: 21px;
-    line-height: 30px;
   }
 }
 

@@ -22,7 +22,7 @@
   bottom: 72px;
   font-family: $font-Century-Gothic;
   font-size: 52px;
-  line-height: 64px;
+  line-height: 1.23;
   font-weight: 700;
   color: $color-white;
 }
@@ -37,7 +37,6 @@
       left: 56px; //原尺寸80px
       bottom: 40px; //原尺寸72px
       font-size: 39px; //原尺寸52px乘0.75
-      line-height: 48px; //原尺寸52px乘0.75
     }
 }
 
@@ -61,7 +60,6 @@
     left: 16px; // screen992尺寸32px
     bottom: 16px; // screen992尺寸24px
     font-size: 29.25px; //screen1563尺寸39px乘0.75
-    line-height: 36px; //screen1563尺寸48px乘0.75
   }
 }
 
@@ -72,6 +70,5 @@
   }
   .video-box h2 {
     font-size: 22.125px; //screen768尺寸29.25px 乘0.75
-    line-height: 27px; //screen768尺寸36px乘0.75
   }
 }
