@@ -5222,21 +5222,12 @@ main {
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .footer-section {
-    font-size: 21px;
-  }
-  .footer-content {
-    padding: 195px 0 94.5px 0;
-  }
-}
-
-/*----- max-width 1200 -----*/
-@media screen and (max-width: 1200px) {
   .footer-content {
     padding: 146px 0 70px 0;
   }
 }
 
+/*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
   .footer-content {
