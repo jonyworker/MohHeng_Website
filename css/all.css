@@ -5240,6 +5240,9 @@ main {
 
 /*----- max-width 768 -----*/
 @media screen and (max-width: 768px) {
+  .footer-content {
+    padding: 40px 0;
+  }
   .privacy-teamAndPolicies a + a {
     margin-left: 24px;
   }
@@ -5247,9 +5250,6 @@ main {
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .footer-content {
-    padding: 40px 0;
-  }
   .footer-logo {
     width: 120px;
     margin: 0 auto;
