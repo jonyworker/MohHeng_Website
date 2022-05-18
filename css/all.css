@@ -5316,6 +5316,10 @@ main {
 /*////////////////////////////////////
 ===== Banner-Video Section START =====
 ////////////////////////////////////*/
+.banner-video-section.bg-grey {
+  background-color: #f2f2f2;
+}
+
 .banner-video-content {
   padding: 32px 20px;
 }
