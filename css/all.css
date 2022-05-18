@@ -5389,25 +5389,25 @@ main {
 }
 
 /*////////////////////////////////////
-===== Intro-Primary Section START =====
+===== Intro-type01 Section START =====
 ////////////////////////////////////*/
 /*----- intro-section 灰底 -----*/
-.intro-primary-section.bg-grey {
+.intro-type01-section.bg-grey {
   background-color: #f2f2f2;
 }
 
-.intro-primary-content {
+.intro-type01-content {
   padding: 64px 0;
 }
 
 /*----- intro-section 圖片 -----*/
-.intro-primary-pic {
+.intro-type01-pic {
   border-top-right-radius: 52px;
   aspect-ratio: 832/952;
   overflow: hidden;
 }
 
-.intro-primary-pic img {
+.intro-type01-pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -5415,7 +5415,7 @@ main {
 }
 
 /*----- intro-section 文字 -----*/
-.intro-primary-text h2 {
+.intro-type01-text h2 {
   font-family: "century-gothic", sans-serif;
   font-size: 52px;
   line-height: 1.23;
@@ -5424,7 +5424,7 @@ main {
   margin-bottom: 80px;
 }
 
-.intro-primary-text p {
+.intro-type01-text p {
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   line-height: 1.43;
@@ -5433,7 +5433,7 @@ main {
   margin-bottom: 80px;
 }
 
-.intro-primary-text a {
+.intro-type01-text a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
@@ -5450,15 +5450,15 @@ main {
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .intro-primary-text h2 {
+  .intro-type01-text h2 {
     font-size: 39px;
   }
-  .intro-primary-text h2,
-  .intro-primary-text p {
+  .intro-type01-text h2,
+  .intro-type01-text p {
     margin-bottom: 56px;
   }
-  .intro-primary-text p,
-  .intro-primary-text a {
+  .intro-type01-text p,
+  .intro-type01-text a {
     font-size: 21px;
   }
 }
@@ -5466,24 +5466,155 @@ main {
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-primary-content {
+  .intro-type01-content {
     padding: 20px 0;
   }
-  .intro-primary-text {
+  .intro-type01-text {
     margin: 0 20px 20px 20px;
   }
-  .intro-primary-pic {
+  .intro-type01-pic {
     margin: 0 20px;
+  }
+  .intro-type01-text p,
+  .intro-type01-text a {
+    font-size: 16px;
   }
 }
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .intro-primary-text {
+  .intro-type01-text {
     margin: 20px 0;
   }
-  .intro-primary-pic {
+  .intro-type01-pic {
+    margin: 0;
+  }
+}
+
+/*////////////////////////////////////
+===== Intro-type02 Section START =====
+////////////////////////////////////*/
+/*----- intro-type02-section 灰底 -----*/
+.intro-type02-section.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.intro-type02-content {
+  padding: 128px 0;
+}
+
+/*----- intro-type02-section 圖片 -----*/
+.our-story01-pic {
+  width: 436px;
+  aspect-ratio: 436/439;
+  margin-left: 15%;
+  margin-bottom: 128px;
+}
+
+.intro-type02-pic {
+  border-top-right-radius: 52px;
+  aspect-ratio: 1664/739;
+  overflow: hidden;
+}
+
+.intro-type02-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-type02-text h2 {
+  font-family: "century-gothic", sans-serif;
+  font-size: 52px;
+  line-height: 1.23;
+  font-weight: 700;
+  color: #D51826;
+  margin-bottom: 80px;
+}
+
+.intro-type02-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.43;
+  font-weight: 400;
+  color: #000;
+}
+
+.intro-type02-text p + p {
+  margin-top: 40px;
+}
+
+.intro-type02-text a {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.43;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: #D51826;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .our-story01-pic {
+    width: 400px;
+    margin-left: 10%;
+  }
+  .intro-type02-text p {
+    font-size: 21px;
+  }
+}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {
+  .intro-type02-content {
+    padding: 80px 0;
+  }
+  .our-story01-pic {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-type02-content {
+    padding: 20px 0;
+  }
+  .our-story01-pic {
+    width: 300px;
+    margin: 0 auto 20px auto;
+  }
+  .intro-type02-text p + p {
+    margin-top: 24px;
+  }
+  .intro-type02-text {
+    margin: 0 20px 20px 20px;
+  }
+  .intro-type02-pic {
+    margin: 0 20px;
+  }
+  .intro-type02-text p,
+  .intro-type02-text a {
+    font-size: 16px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-type02-text {
+    margin: 20px 0;
+  }
+  .intro-type02-pic {
     margin: 0;
   }
 }
