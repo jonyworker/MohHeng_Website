@@ -30,7 +30,10 @@
 }
 .intro-type03-text h2 {
   font-family: $font-Century-Gothic;
-  font-size: 52px;
+  // 超級文字縮放公式
+  // minFontSize(rem), minViewWith(px), maxViewWith(px)px, maxFontSize(rem)
+  // font-size: sass_clamp(2,576,1920,3.25);
+  @include font-size(3.25rem);
   line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
@@ -38,7 +41,10 @@
 }
 .intro-type03-text h3 {
   font-family: $font-Century-Gothic;
-  font-size: 44px;
+  // 超級文字縮放公式
+  // minFontSize(rem), minViewWith(px), maxViewWith(px)px, maxFontSize(rem)
+  // font-size: sass_clamp(1,768,1536,1.75);
+  @include font-size(2.75rem);
   line-height: 1.4;
   font-weight: 700;
   color: $color-mh-red;
@@ -46,7 +52,10 @@
 }
 .intro-type03-text p {
   font-family: $font-DMsans;
-  font-size: 28px;
+  // 超級文字縮放公式
+  // minFontSize(rem), minViewWith(px), maxViewWith(px)px, maxFontSize(rem)
+  // font-size: sass_clamp(1,768,1536,1.75);
+  @include font-size(1.75rem);
   line-height: 1.43;
   font-weight: 400;
   color: $color-black;
@@ -72,17 +81,17 @@
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
   .intro-type03-text h2 {
-    font-size: 39px; //原尺寸52px乘0.75
+    // font-size: 39px; //原尺寸52px乘0.75
     margin-bottom: 258px; //原尺寸344px乘0.75
   }
   
   .intro-type03-text h3 {
-    font-size: 33px; //原尺寸44px乘0.75
+    // font-size: 33px; //原尺寸44px乘0.75
     margin-bottom: 42px;
   }
   .intro-type03-text p,
   .intro-type03-text a {
-    font-size: 21px; //原尺寸28px乘0.75
+    // font-size: 21px; //原尺寸28px乘0.75
   }
 
 }
@@ -101,26 +110,26 @@
   }
 
   .intro-type03-text h2 {
-    font-size: 29.5px; //原尺寸39px乘0.75
+    // font-size: 29.5px; //原尺寸39px乘0.75
     margin-bottom: 100px; //原尺寸258px
   }
   .mision-text-area {
     padding-top: 40px;
   }
   .intro-type03-text h3 {
-    font-size: 25px; //原尺寸33px乘0.75
+    // font-size: 25px; //原尺寸33px乘0.75
     margin-bottom: 24px;
   }
   .intro-type03-text p,
   .intro-type03-text a {
-    font-size: 16px; //原尺寸21px乘0.75
+    // font-size: 16px; //原尺寸21px乘0.75
   }
 }
 
 /*----- max-width 768 -----*/
 @media screen and (max-width: 768px) {
   .intro-type03-text h2 {
-    font-size: 29.5px; //原尺寸39px乘0.75
+    // font-size: 29.5px; //原尺寸39px乘0.75
     margin-bottom: 40px; //原尺寸193px乘0.75
   }
   .mision-text-area {
@@ -134,7 +143,7 @@
     margin: 20px 0;
   }
   .intro-type03-text h2 {
-    font-size: 29.5px; //原尺寸39px乘0.75
+    // font-size: 29.5px; //原尺寸39px乘0.75
     margin-bottom: 20px; //原尺寸258px
   }
 }

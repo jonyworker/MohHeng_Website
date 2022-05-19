@@ -5660,28 +5660,46 @@ main {
 
 .intro-type03-text h2 {
   font-family: "century-gothic", sans-serif;
-  font-size: 52px;
+  font-size: calc(1.45rem + 2.4vw);
   line-height: 1.23;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 344px;
 }
 
+@media (min-width: 1200px) {
+  .intro-type03-text h2 {
+    font-size: 3.25rem;
+  }
+}
+
 .intro-type03-text h3 {
   font-family: "century-gothic", sans-serif;
-  font-size: 44px;
+  font-size: calc(1.4rem + 1.8vw);
   line-height: 1.4;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 56px;
 }
 
+@media (min-width: 1200px) {
+  .intro-type03-text h3 {
+    font-size: 2.75rem;
+  }
+}
+
 .intro-type03-text p {
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
+  font-size: calc(1.3rem + 0.6vw);
   line-height: 1.43;
   font-weight: 400;
   color: #000;
+}
+
+@media (min-width: 1200px) {
+  .intro-type03-text p {
+    font-size: 1.75rem;
+  }
 }
 
 .intro-type03-text a {
@@ -5702,16 +5720,10 @@ main {
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
   .intro-type03-text h2 {
-    font-size: 39px;
     margin-bottom: 258px;
   }
   .intro-type03-text h3 {
-    font-size: 33px;
     margin-bottom: 42px;
-  }
-  .intro-type03-text p,
-  .intro-type03-text a {
-    font-size: 21px;
   }
 }
 
@@ -5725,26 +5737,19 @@ main {
     margin: 0 20px 20px 20px;
   }
   .intro-type03-text h2 {
-    font-size: 29.5px;
     margin-bottom: 100px;
   }
   .mision-text-area {
     padding-top: 40px;
   }
   .intro-type03-text h3 {
-    font-size: 25px;
     margin-bottom: 24px;
-  }
-  .intro-type03-text p,
-  .intro-type03-text a {
-    font-size: 16px;
   }
 }
 
 /*----- max-width 768 -----*/
 @media screen and (max-width: 768px) {
   .intro-type03-text h2 {
-    font-size: 29.5px;
     margin-bottom: 40px;
   }
   .mision-text-area {
@@ -5758,7 +5763,6 @@ main {
     margin: 20px 0;
   }
   .intro-type03-text h2 {
-    font-size: 29.5px;
     margin-bottom: 20px;
   }
 }
