@@ -1,56 +1,50 @@
 
 /*////////////////////////////////////
-===== Intro-type01 Section START =====
+===== Intro-type04 Section START =====
 ////////////////////////////////////*/
 /*----- intro-section 灰底 -----*/
-.intro-type01-section.bg-grey {
+.intro-type04-section.bg-grey {
   background-color: $color-light-grey;
 }
 
-.intro-type01-content {
+.intro-type04-content {
   padding: 64px 0;
 }
 
 /*----- intro-section 圖片 -----*/
-.intro-type01-pic {
+.intro-type04-pic {
   border-top-right-radius: 52px;
   aspect-ratio: 832/952;
   overflow: hidden;
 }
-.intro-type01-pic img {
+.intro-type04-pic img {
   width: 100%;
   height: 100%;
   object-fit:cover;
 }
 
 /*----- intro-section 文字 -----*/
-.intro-type01-text h2 {
+.intro-type04-text h2 {
   font-family: $font-Century-Gothic;
-  // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 32px, 52px);
+  font-size: sass_clamp(2,576,1920,3.25);
   line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
   margin-bottom: 80px;
 }
-.intro-type01-text p {
+.intro-type04-text p {
   font-family: $font-DMsans;
-   // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 18px, 28px);
-  line-height: 1.4;
+  font-size: sass_clamp(1.125,768,1536,1.75);
+  line-height: 1.43;
   font-weight: 400;
   color: $color-black;
   margin-bottom: 80px;
 }
-.intro-type01-text a {
+.intro-type04-text a {
   display: inline-block;
   font-family: $font-DMsans;
-   // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 18px, 28px);
-  line-height: 1.4;
+  font-size: sass_clamp(1.125,768,1536,1.75);
+  line-height: 1.43;
   font-weight: 400;
   color: $color-white;
   padding: 12px 24px;
@@ -64,16 +58,16 @@
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .intro-type01-text h2 {
+  .intro-type04-text h2 {
     // font-size: 39px; //原尺寸52px乘0.75
   }
-  .intro-type01-text h2,
-  .intro-type01-text p {
+  .intro-type04-text h2,
+  .intro-type04-text p {
     margin-bottom: 56px;
   }
   
-  .intro-type01-text p,
-  .intro-type01-text a {
+  .intro-type04-text p,
+  .intro-type04-text a {
     // font-size: 21px; //原尺寸28px乘0.75
   }
 }
@@ -83,20 +77,20 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-type01-content {
+  .intro-type04-content {
       padding: 20px 0;
   }
-  .intro-type01-text {
+  .intro-type04-text {
     margin: 0 20px 20px 20px;
   }
-  .intro-type01-pic {
+  .intro-type04-pic {
     margin: 0 20px;
   }
-  .intro-type01-text h2 {
+  .intro-type04-text h2 {
     // font-size: 29.5px; //原尺寸39px乘0.75
   }
-  .intro-type01-text p,
-  .intro-type01-text a {
+  .intro-type04-text p,
+  .intro-type04-text a {
     // font-size: 16px; //原尺寸21px乘0.75
   }
 }
@@ -106,10 +100,10 @@
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .intro-type01-text {
+  .intro-type04-text {
       margin: 20px 0;
     }
-  .intro-type01-pic {
+  .intro-type04-pic {
     margin: 0 ;
   }
 }

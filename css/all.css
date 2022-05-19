@@ -5421,27 +5421,56 @@ main {
 /*----- intro-section 文字 -----*/
 .intro-type01-text h2 {
   font-family: "century-gothic", sans-serif;
-  font-size: 52px;
   line-height: 1.23;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 80px;
 }
 
+.intro-type01-text h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type01-text h2 {
+    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type01-text h2 {
+    font-size: 52px;
+  }
+}
+
 .intro-type01-text p {
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
-  line-height: 1.43;
+  line-height: 1.4;
   font-weight: 400;
   color: #000;
   margin-bottom: 80px;
 }
 
+.intro-type01-text p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type01-text p {
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type01-text p {
+    font-size: 28px;
+  }
+}
+
 .intro-type01-text a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
-  line-height: 1.43;
+  line-height: 1.4;
   font-weight: 400;
   color: #fff;
   padding: 12px 24px;
@@ -5449,21 +5478,30 @@ main {
   background-color: #D51826;
 }
 
+.intro-type01-text a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type01-text a {
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type01-text a {
+    font-size: 28px;
+  }
+}
+
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .intro-type01-text h2 {
-    font-size: 39px;
-  }
   .intro-type01-text h2,
   .intro-type01-text p {
     margin-bottom: 56px;
-  }
-  .intro-type01-text p,
-  .intro-type01-text a {
-    font-size: 21px;
   }
 }
 
@@ -5478,13 +5516,6 @@ main {
   }
   .intro-type01-pic {
     margin: 0 20px;
-  }
-  .intro-type01-text h2 {
-    font-size: 29.5px;
-  }
-  .intro-type01-text p,
-  .intro-type01-text a {
-    font-size: 16px;
   }
 }
 
@@ -5535,19 +5566,49 @@ main {
 /*----- intro-section 文字 -----*/
 .intro-type02-text h2 {
   font-family: "century-gothic", sans-serif;
-  font-size: 52px;
   line-height: 1.23;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 80px;
 }
 
+.intro-type02-text h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type02-text h2 {
+    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type02-text h2 {
+    font-size: 52px;
+  }
+}
+
 .intro-type02-text p {
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
-  line-height: 1.43;
+  line-height: 1.4;
   font-weight: 400;
   color: #000;
+}
+
+.intro-type02-text p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type02-text p {
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type02-text p {
+    font-size: 28px;
+  }
 }
 
 .intro-type02-text p + p {
@@ -5557,13 +5618,28 @@ main {
 .intro-type02-text a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
-  line-height: 1.43;
+  line-height: 1.4;
   font-weight: 400;
   color: #fff;
   padding: 12px 24px;
   border-radius: 100px;
   background-color: #D51826;
+}
+
+.intro-type02-text a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type02-text a {
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type02-text a {
+    font-size: 28px;
+  }
 }
 
 /*/////////////////////////////
@@ -5574,9 +5650,6 @@ main {
   .our-story01-pic {
     width: 400px;
     margin-left: 10%;
-  }
-  .intro-type02-text p {
-    font-size: 21px;
   }
 }
 
@@ -5608,10 +5681,6 @@ main {
   }
   .intro-type02-pic {
     margin: 0 20px;
-  }
-  .intro-type02-text p,
-  .intro-type02-text a {
-    font-size: 16px;
   }
 }
 
@@ -5660,58 +5729,100 @@ main {
 
 .intro-type03-text h2 {
   font-family: "century-gothic", sans-serif;
-  font-size: calc(1.45rem + 2.4vw);
   line-height: 1.23;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 344px;
 }
 
-@media (min-width: 1200px) {
+.intro-type03-text h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 78px) {
   .intro-type03-text h2 {
-    font-size: 3.25rem;
+    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type03-text h2 {
+    font-size: 52px;
   }
 }
 
 .intro-type03-text h3 {
   font-family: "century-gothic", sans-serif;
-  font-size: calc(1.4rem + 1.8vw);
   line-height: 1.4;
   font-weight: 700;
   color: #D51826;
   margin-bottom: 56px;
 }
 
-@media (min-width: 1200px) {
+.intro-type03-text h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 78px) {
   .intro-type03-text h3 {
-    font-size: 2.75rem;
+    font-size: calc(28px + 16 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type03-text h3 {
+    font-size: 44px;
   }
 }
 
 .intro-type03-text p {
   font-family: "DM Sans", sans-serif;
-  font-size: calc(1.3rem + 0.6vw);
   line-height: 1.43;
   font-weight: 400;
   color: #000;
 }
 
-@media (min-width: 1200px) {
+.intro-type03-text p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
   .intro-type03-text p {
-    font-size: 1.75rem;
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type03-text p {
+    font-size: 28px;
   }
 }
 
 .intro-type03-text a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
-  font-size: 28px;
   line-height: 1.43;
   font-weight: 400;
   color: #fff;
   padding: 12px 24px;
   border-radius: 100px;
   background-color: #D51826;
+}
+
+.intro-type03-text a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 78px) {
+  .intro-type03-text a {
+    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type03-text a {
+    font-size: 28px;
+  }
 }
 
 /*/////////////////////////////

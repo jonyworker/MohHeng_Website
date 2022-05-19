@@ -32,7 +32,9 @@
 /*----- intro-section 文字 -----*/
 .intro-type02-text h2 {
   font-family: $font-Century-Gothic;
-  font-size: 52px;
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(78px, 1536px, 32px, 52px);
   line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
@@ -40,8 +42,10 @@
 }
 .intro-type02-text p {
   font-family: $font-DMsans;
-  font-size: 28px;
-  line-height: 1.43;
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(78px, 1536px, 18px, 28px);
+  line-height: 1.4;
   font-weight: 400;
   color: $color-black;
   
@@ -52,8 +56,10 @@
 .intro-type02-text a {
   display: inline-block;
   font-family: $font-DMsans;
-  font-size: 28px;
-  line-height: 1.43;
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(78px, 1536px, 18px, 28px);
+  line-height: 1.4;
   font-weight: 400;
   color: $color-white;
   padding: 12px 24px;
@@ -75,7 +81,7 @@
     // margin-bottom: 56px;
   }
   .intro-type02-text p {
-    font-size: 21px; //原尺寸28px乘0.75
+    // font-size: 21px; //原尺寸28px乘0.75
   }
 }
 
@@ -110,7 +116,7 @@
   }
   .intro-type02-text p,
   .intro-type02-text a {
-    font-size: 16px; //原尺寸21px乘0.75
+    // font-size: 16px; //原尺寸21px乘0.75
   }
 }
 
