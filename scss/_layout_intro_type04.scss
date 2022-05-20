@@ -29,8 +29,8 @@
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 28px, 44px);
   line-height: 1.4;
-  font-weight: 400;
-  color: $color-mh-red;
+  font-weight: 700;
+  color: $color-black;
   margin-bottom: 16px;
 }
 .intro-type04-section p {
@@ -60,7 +60,7 @@
 .history-card-clip {
   max-width: 1792px;
   // aspect-ratio: 1792/643;
-  margin-right: calc(-4.66666% - 12px);
+  margin-right: calc(-4.67777% - 12px);
   overflow: hidden;
 }
 /*----- history-card-list -----*/
@@ -80,7 +80,7 @@
   // width: 743px;
   // height: 467px;
   max-width: 743px;
-  max-height: 467px;
+  // max-height: 467px;
   // aspect-ratio: 743/467;
   overflow: hidden;
   margin-bottom: 56px;
@@ -102,11 +102,26 @@
 }
 
 /*----- max-width 1200 -----*/
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+  .intro-type04-content {
+    padding: 80px 0;
+  }
+  .intro-type04-section .history-card-list .history-card-item+.history-card-item {
+    margin-left: 56px;
+  }
+}
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  
+  .intro-type04-content {
+    padding: 20px 0;
+  }
+  .intro-type04-section .history-card-list .history-card-item+.history-card-item {
+    margin-left: 32px;
+  }
+  .history-card-clip {
+    margin-right: -12px;
+  }
 }
 
 /*----- max-width 768 -----*/

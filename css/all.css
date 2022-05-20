@@ -5940,8 +5940,8 @@ main {
 .intro-type04-section .history-card-text h3 {
   font-family: "century-gothic", sans-serif;
   line-height: 1.4;
-  font-weight: 400;
-  color: #D51826;
+  font-weight: 700;
+  color: #000;
   margin-bottom: 16px;
 }
 
@@ -6014,7 +6014,7 @@ main {
 /*----- history-card-clip -----*/
 .history-card-clip {
   max-width: 1792px;
-  margin-right: calc(-4.66666% - 12px);
+  margin-right: calc(-4.67777% - 12px);
   overflow: hidden;
 }
 
@@ -6038,7 +6038,6 @@ main {
 .intro-type04-section .history-card-pic {
   border-top-right-radius: 52px;
   max-width: 743px;
-  max-height: 467px;
   overflow: hidden;
   margin-bottom: 56px;
 }
@@ -6056,7 +6055,206 @@ main {
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 /*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {
+  .intro-type04-content {
+    padding: 80px 0;
+  }
+  .intro-type04-section .history-card-list .history-card-item + .history-card-item {
+    margin-left: 56px;
+  }
+}
+
 /*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-type04-content {
+    padding: 20px 0;
+  }
+  .intro-type04-section .history-card-list .history-card-item + .history-card-item {
+    margin-left: 32px;
+  }
+  .history-card-clip {
+    margin-right: -12px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+/*////////////////////////////////////
+===== Intro-type05 Section START =====
+////////////////////////////////////*/
+/*----- intro-section 灰底 -----*/
+.intro-type05-section.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.intro-type05-content {
+  padding: 64px 0;
+}
+
+.intro-type05-main-text {
+  margin-bottom: 200px;
+}
+
+.intro-type05-content .body-text-item + .body-text-item {
+  margin-top: 80px;
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-type05-pic {
+  height: 100%;
+  margin-right: calc(-9.33333% - 12px);
+}
+
+.intro-type05-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-type05-section h2 {
+  font-family: "century-gothic", sans-serif;
+  line-height: 1.23;
+  font-weight: 700;
+  color: #D51826;
+  margin-bottom: 80px;
+}
+
+.intro-type05-section h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type05-section h2 {
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type05-section h2 {
+    font-size: 52px;
+  }
+}
+
+.intro-type05-section .body-text-title {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.37;
+  font-weight: 500;
+  color: #D51826;
+}
+
+.intro-type05-section .body-text-title {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type05-section .body-text-title {
+    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type05-section .body-text-title {
+    font-size: 35px;
+  }
+}
+
+.intro-type05-section p {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #000;
+}
+
+.intro-type05-section p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type05-section p {
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type05-section p {
+    font-size: 28px;
+  }
+}
+
+.intro-type05-section a {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: #D51826;
+}
+
+.intro-type05-section a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type05-section a {
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type05-section a {
+    font-size: 28px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {
+  .intro-type05-main-text {
+    margin-bottom: 80px;
+  }
+  .intro-type05-section h2 {
+    margin-bottom: 64px;
+  }
+  .intro-type05-content .body-text-item + .body-text-item {
+    margin-top: 64px;
+  }
+}
+
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-type05-pic {
+    height: 100%;
+    margin-right: 0;
+  }
+  .intro-type05-content {
+    padding: 20px 0;
+  }
+  .intro-type05-main-text {
+    margin-bottom: 64px;
+  }
+  .intro-type05-section h2 {
+    margin-bottom: 32px;
+  }
+  .intro-type05-content .body-text-item + .body-text-item {
+    margin-top: 32px;
+  }
+  .intro-type05-text {
+    margin: 0 20px 20px 20px;
+  }
+  .intro-type05-pic {
+    margin: 0 20px;
+  }
+}
+
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 /*# sourceMappingURL=all.css.map */
