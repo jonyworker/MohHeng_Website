@@ -1,49 +1,53 @@
 
-/*////////////////////////////////////
-===== Intro-type04 Section START =====
-////////////////////////////////////*/
+/*//////////////////////////////////////////////
+===== Intro-type04 Section (橫向滑動) START =====
+/////////////////////////////////////////////*/
+
 /*----- intro-section 灰底 -----*/
 .intro-type04-section.bg-grey {
   background-color: $color-light-grey;
 }
 
 .intro-type04-content {
-  padding: 64px 0;
-}
-
-/*----- intro-section 圖片 -----*/
-.intro-type04-pic {
-  border-top-right-radius: 52px;
-  aspect-ratio: 832/952;
-  overflow: hidden;
-}
-.intro-type04-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
+  padding: 128px 0;
 }
 
 /*----- intro-section 文字 -----*/
-.intro-type04-text h2 {
+.intro-type04-section h2 {
   font-family: $font-Century-Gothic;
-  font-size: sass_clamp(2,576,1920,3.25);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 32px, 52px);
   line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
-  margin-bottom: 80px;
+  margin-bottom: 128px;
 }
-.intro-type04-text p {
+.intro-type04-section .history-card-text h3 {
+  font-family: $font-Century-Gothic;
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 28px, 44px);
+  line-height: 1.4;
+  font-weight: 400;
+  color: $color-mh-red;
+  margin-bottom: 16px;
+}
+.intro-type04-section p {
   font-family: $font-DMsans;
-  font-size: sass_clamp(1.125,768,1536,1.75);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 18px, 28px);
   line-height: 1.43;
   font-weight: 400;
   color: $color-black;
-  margin-bottom: 80px;
 }
-.intro-type04-text a {
+.intro-type04-section a {
   display: inline-block;
   font-family: $font-DMsans;
-  font-size: sass_clamp(1.125,768,1536,1.75);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 18px, 28px);
   line-height: 1.43;
   font-weight: 400;
   color: $color-white;
@@ -52,24 +56,49 @@
   background-color: $color-mh-red;
 }
 
+/*----- history-card-clip -----*/
+.history-card-clip {
+  max-width: 1792px;
+  // aspect-ratio: 1792/643;
+  margin-right: calc(-4.66666% - 12px);
+  overflow: hidden;
+}
+/*----- history-card-list -----*/
+.intro-type04-section .history-card-list {
+  display: flex;
+  width: 3000px;
+}
+.intro-type04-section .history-card-list .history-card-item {
+  max-width: 743px;
+}
+.intro-type04-section .history-card-list .history-card-item + .history-card-item {
+  margin-left: 96px;
+}
+/*----- history-card-pic -----*/
+.intro-type04-section .history-card-pic {
+  border-top-right-radius: 52px;
+  // width: 743px;
+  // height: 467px;
+  max-width: 743px;
+  max-height: 467px;
+  // aspect-ratio: 743/467;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+.intro-type04-section .history-card-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+/*----- history-card-text -----*/
+
 
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .intro-type04-text h2 {
-    // font-size: 39px; //原尺寸52px乘0.75
-  }
-  .intro-type04-text h2,
-  .intro-type04-text p {
-    margin-bottom: 56px;
-  }
   
-  .intro-type04-text p,
-  .intro-type04-text a {
-    // font-size: 21px; //原尺寸28px乘0.75
-  }
 }
 
 /*----- max-width 1200 -----*/
@@ -77,22 +106,7 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-type04-content {
-      padding: 20px 0;
-  }
-  .intro-type04-text {
-    margin: 0 20px 20px 20px;
-  }
-  .intro-type04-pic {
-    margin: 0 20px;
-  }
-  .intro-type04-text h2 {
-    // font-size: 29.5px; //原尺寸39px乘0.75
-  }
-  .intro-type04-text p,
-  .intro-type04-text a {
-    // font-size: 16px; //原尺寸21px乘0.75
-  }
+  
 }
 
 /*----- max-width 768 -----*/
@@ -100,10 +114,5 @@
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .intro-type04-text {
-      margin: 20px 0;
-    }
-  .intro-type04-pic {
-    margin: 0 ;
-  }
+  
 }

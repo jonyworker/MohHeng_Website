@@ -32,7 +32,7 @@
   font-family: $font-Century-Gothic;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 32px, 52px);
+  @include fluid-type(768px, 1536px, 32px, 52px);
   line-height: 1.23;
   font-weight: 700;
   color: $color-mh-red;
@@ -42,7 +42,7 @@
   font-family: $font-Century-Gothic;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 28px, 44px);
+  @include fluid-type(768px, 1536px, 28px, 44px);
   line-height: 1.4;
   font-weight: 700;
   color: $color-mh-red;
@@ -52,7 +52,7 @@
   font-family: $font-DMsans;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 18px, 28px);
+  @include fluid-type(768px, 1536px, 18px, 28px);
   line-height: 1.43;
   font-weight: 400;
   color: $color-black;
@@ -64,7 +64,7 @@
   font-family: $font-DMsans;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(78px, 1536px, 18px, 28px);
+  @include fluid-type(768px, 1536px, 18px, 28px);
   line-height: 1.43;
   font-weight: 400;
   color: $color-white;

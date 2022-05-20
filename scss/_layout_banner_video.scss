@@ -24,7 +24,9 @@
   left: 80px;
   bottom: 72px;
   font-family: $font-Century-Gothic;
-  font-size: 52px;
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 32px, 52px);
   line-height: 1.23;
   font-weight: 700;
   color: $color-white;

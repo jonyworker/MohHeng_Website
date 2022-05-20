@@ -74,6 +74,10 @@ a {
   color: #000;
 }
 
+* {
+  outline: 1px solid #5a7;
+}
+
 .container-1920 {
   max-width: 1920px;
 }
@@ -5343,10 +5347,25 @@ main {
   left: 80px;
   bottom: 72px;
   font-family: "century-gothic", sans-serif;
-  font-size: 52px;
   line-height: 1.23;
   font-weight: 700;
   color: #fff;
+}
+
+.video-box h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .video-box h2 {
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .video-box h2 {
+    font-size: 52px;
+  }
 }
 
 /*/////////////////////////////
@@ -5431,9 +5450,9 @@ main {
   font-size: 32px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type01-text h2 {
-    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5455,9 +5474,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type01-text p {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5482,9 +5501,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type01-text a {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5576,9 +5595,9 @@ main {
   font-size: 32px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type02-text h2 {
-    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5599,9 +5618,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type02-text p {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5630,9 +5649,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type02-text a {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5650,6 +5669,9 @@ main {
   .our-story01-pic {
     width: 400px;
     margin-left: 10%;
+  }
+  .intro-type02-text p {
+    margin-bottom: 56px;
   }
 }
 
@@ -5739,9 +5761,9 @@ main {
   font-size: 32px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type03-text h2 {
-    font-size: calc(32px + 20 * ((100vw - 78px) / 1458));
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5763,9 +5785,9 @@ main {
   font-size: 28px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type03-text h3 {
-    font-size: calc(28px + 16 * ((100vw - 78px) / 1458));
+    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5786,9 +5808,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type03-text p {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5813,9 +5835,9 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 78px) {
+@media screen and (min-width: 768px) {
   .intro-type03-text a {
-    font-size: calc(18px + 10 * ((100vw - 78px) / 1458));
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5877,4 +5899,164 @@ main {
     margin-bottom: 20px;
   }
 }
+
+/*//////////////////////////////////////////////
+===== Intro-type04 Section (橫向滑動) START =====
+/////////////////////////////////////////////*/
+/*----- intro-section 灰底 -----*/
+.intro-type04-section.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.intro-type04-content {
+  padding: 128px 0;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-type04-section h2 {
+  font-family: "century-gothic", sans-serif;
+  line-height: 1.23;
+  font-weight: 700;
+  color: #D51826;
+  margin-bottom: 128px;
+}
+
+.intro-type04-section h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type04-section h2 {
+    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type04-section h2 {
+    font-size: 52px;
+  }
+}
+
+.intro-type04-section .history-card-text h3 {
+  font-family: "century-gothic", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #D51826;
+  margin-bottom: 16px;
+}
+
+.intro-type04-section .history-card-text h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type04-section .history-card-text h3 {
+    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type04-section .history-card-text h3 {
+    font-size: 44px;
+  }
+}
+
+.intro-type04-section p {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.43;
+  font-weight: 400;
+  color: #000;
+}
+
+.intro-type04-section p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type04-section p {
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type04-section p {
+    font-size: 28px;
+  }
+}
+
+.intro-type04-section a {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.43;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: #D51826;
+}
+
+.intro-type04-section a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-type04-section a {
+    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-type04-section a {
+    font-size: 28px;
+  }
+}
+
+/*----- history-card-clip -----*/
+.history-card-clip {
+  max-width: 1792px;
+  margin-right: calc(-4.66666% - 12px);
+  overflow: hidden;
+}
+
+/*----- history-card-list -----*/
+.intro-type04-section .history-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3000px;
+}
+
+.intro-type04-section .history-card-list .history-card-item {
+  max-width: 743px;
+}
+
+.intro-type04-section .history-card-list .history-card-item + .history-card-item {
+  margin-left: 96px;
+}
+
+/*----- history-card-pic -----*/
+.intro-type04-section .history-card-pic {
+  border-top-right-radius: 52px;
+  max-width: 743px;
+  max-height: 467px;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+
+.intro-type04-section .history-card-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*----- history-card-text -----*/
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 /*# sourceMappingURL=all.css.map */
