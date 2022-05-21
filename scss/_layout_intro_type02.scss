@@ -6,6 +6,12 @@
 .intro-type02-section.bg-grey {
   background-color: $color-light-grey;
 }
+.intro-type02-section.bg-half {
+  background-image: linear-gradient(to right,
+      white 0% 50%,
+      $color-light-grey 0,
+      );
+}
 
 .intro-type02-content {
   padding: 128px 0;
@@ -22,6 +28,9 @@
   border-top-right-radius: 52px;
   aspect-ratio: 1664/739;
   overflow: hidden;
+}
+.intro-type02-section.townships .intro-type02-pic {
+  margin-bottom: 128px;
 }
 .intro-type02-pic img {
   width: 100%;
@@ -88,6 +97,9 @@
   .intro-type02-content {
     padding: 80px 0;
   }
+  .intro-type02-section.townships .intro-type02-pic {
+    margin-bottom: 80px;
+  }
   .our-story01-pic {
     width: 300px;
     margin-left: 0;
@@ -96,8 +108,14 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
+  .intro-type02-section.bg-half {
+    background-image: linear-gradient(to right,white 0% 100%);
+  }
   .intro-type02-content {
     padding: 20px 0;
+  }
+  .intro-type02-section.townships .intro-type02-pic {
+    margin-bottom: 20px;
   }
   .our-story01-pic {
     width: 300px;

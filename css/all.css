@@ -5557,6 +5557,11 @@ main {
   background-color: #f2f2f2;
 }
 
+.intro-type02-section.bg-half {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(0, #f2f2f2));
+  background-image: linear-gradient(to right, white 0% 50%, #f2f2f2 0);
+}
+
 .intro-type02-content {
   padding: 128px 0;
 }
@@ -5573,6 +5578,10 @@ main {
   border-top-right-radius: 52px;
   aspect-ratio: 1664/739;
   overflow: hidden;
+}
+
+.intro-type02-section.townships .intro-type02-pic {
+  margin-bottom: 128px;
 }
 
 .intro-type02-pic img {
@@ -5680,6 +5689,9 @@ main {
   .intro-type02-content {
     padding: 80px 0;
   }
+  .intro-type02-section.townships .intro-type02-pic {
+    margin-bottom: 80px;
+  }
   .our-story01-pic {
     width: 300px;
     margin-left: 0;
@@ -5688,8 +5700,15 @@ main {
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
+  .intro-type02-section.bg-half {
+    background-image: -webkit-gradient(linear, left top, right top, from(white));
+    background-image: linear-gradient(to right, white 0% 100%);
+  }
   .intro-type02-content {
     padding: 20px 0;
+  }
+  .intro-type02-section.townships .intro-type02-pic {
+    margin-bottom: 20px;
   }
   .our-story01-pic {
     width: 300px;
@@ -6075,9 +6094,21 @@ main {
   .history-card-clip {
     margin-right: -12px;
   }
+  .intro-type04-section .history-card-pic {
+    margin-bottom: 32px;
+  }
+  .intro-type04-section .history-card-pic {
+    max-width: 600px;
+  }
 }
 
 /*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .intro-type04-section .history-card-pic {
+    max-width: 440px;
+  }
+}
+
 /*----- max-width 576 -----*/
 /*////////////////////////////////////
 ===== Intro-type05 Section START =====
@@ -6085,6 +6116,15 @@ main {
 /*----- intro-section 灰底 -----*/
 .intro-type05-section.bg-grey {
   background-color: #f2f2f2;
+}
+
+.intro-type05-section.bg-half-img .container {
+  background-image: url("../image/01_our_story/illustration/MH_Our Story-10.png");
+  width: 100%;
+  height: 100%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
 .intro-type05-content {
@@ -6101,17 +6141,12 @@ main {
 
 /*----- intro-section 圖片 -----*/
 .intro-type05-pic {
-  height: 100%;
-  margin-right: calc(-9.33333% - 12px);
+  width: 100%;
 }
 
 .intro-type05-pic img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center bottom;
-     object-position: center bottom;
 }
 
 /*----- intro-section 文字 -----*/

@@ -122,10 +122,20 @@
   .history-card-clip {
     margin-right: -12px;
   }
+  .intro-type04-section .history-card-pic {
+    margin-bottom: 32px;
+  }
+  .intro-type04-section .history-card-pic {
+    max-width: 600px;
+  }
 }
 
 /*----- max-width 768 -----*/
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .intro-type04-section .history-card-pic {
+    max-width: 440px;
+  }
+}
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
