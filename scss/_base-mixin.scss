@@ -11,22 +11,24 @@
   line-height: $line-height;
   letter-spacing: $letter-spacing;
 }
-
+/*----- 字體 - heading-2 -----*/
+// TODO:mixin 字體 - heading-2
 @mixin heading-2 {
   @include font($font-Century-Gothic,normal, null, 700, 1.23, 0);
-  // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 32px, 52px);
 }
+/*----- 字體 - heading-3 -----*/
+// TODO:mixin 字體 - heading-3
 @mixin heading-3 {
   @include font($font-Century-Gothic, normal, null, 700, 1.23, 0);
-  // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 28px, 44px);
 }
+/*----- 字體 - body-text -----*/
+// TODO:mixin 字體 - body-text
 @mixin body-text {
   @include font($font-DMsans, normal, null, 400, 1.4, 0);
-  // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 18px, 28px);
 }
