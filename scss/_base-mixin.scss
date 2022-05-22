@@ -1,7 +1,32 @@
 
-@mixin DMsans($font-size,$font-weight) {
-  font-family: $font-DMsans;
-  font-weight: $font-weight;
+/*//////////////////////////
+===== Font Mixin START =====
+//////////////////////////*/
+/*----- 字體 - 基礎組件 -----*/
+@mixin font ($font-family, $font-style, $font-size, $font-weight, $line-height, $letter-spacing) {
+  font-family: $font-family;
+  font-style: $font-style;
   font-size: $font-size;
-  line-height: 1.4;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin heading-2 {
+  @include font($font-Century-Gothic,normal, null, 700, 1.23, 0);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 32px, 52px);
+}
+@mixin heading-3 {
+  @include font($font-Century-Gothic, normal, null, 700, 1.23, 0);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 28px, 44px);
+}
+@mixin body-text {
+  @include font($font-DMsans, normal, null, 400, 1.4, 0);
+  // 超級文字縮放公式
+  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 18px, 28px);
 }

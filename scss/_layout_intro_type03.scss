@@ -29,12 +29,13 @@
   padding-top: 56px;
 }
 .intro-type03-text h2 {
-  font-family: $font-Century-Gothic;
+  // font-family: $font-Century-Gothic;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 32px, 52px);
-  line-height: 1.23;
-  font-weight: 700;
+  // @include fluid-type(768px, 1536px, 32px, 52px);
+  // line-height: 1.23;
+  // font-weight: 700;
+  @include heading-2;
   color: $color-mh-red;
   margin-bottom: 344px;
 }

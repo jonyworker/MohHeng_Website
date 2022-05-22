@@ -1,7 +1,28 @@
-$font-Mulish: 'Mulish', sans-serif;
-$font-DMsans: 'DM Sans', sans-serif;
-$font-Century-Gothic:'century-gothic',
-sans-serif;//400, 700可選
-* {
+
+/*///////////////////////////////
+===== Base Typography START =====
+///////////////////////////////*/
+
+.intro h2 {
+  @include heading-2;
+  color: $color-main;
+}
+
+.intro h3 {
+  @include heading-3;
+  color: $color-mh-red;
+}
+
+.intro p {
+  @include body-text;
   color: $color-black;
+}
+
+.intro a {
+  display: inline-block;
+  @include body-text;
+  color: $color-white;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: $color-mh-red;
 }
