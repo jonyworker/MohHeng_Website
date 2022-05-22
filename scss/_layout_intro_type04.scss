@@ -61,15 +61,17 @@
   max-width: 1792px;
   // aspect-ratio: 1792/643;
   margin-right: calc(-4.67777% - 12px);
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 /*----- history-card-list -----*/
 .intro-type04-section .history-card-list {
   display: flex;
-  width: 3000px;
+  flex-wrap: nowrap;
 }
 .intro-type04-section .history-card-list .history-card-item {
-  max-width: 743px;
+  flex: 0 0 100%; //grow shrink basic
+  max-width: 38.6979%;
 }
 .intro-type04-section .history-card-list .history-card-item + .history-card-item {
   margin-left: 96px;

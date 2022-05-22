@@ -1,35 +1,28 @@
 /*////////////////////////////////////
-===== Intro-type05 Section START =====
+===== Intro-type07 Section START =====
 ////////////////////////////////////*/
-/*----- intro-section 灰底 -----*/
-.intro-type05-section.bg-grey {
+/*----- intro-type07-section 灰底 -----*/
+.intro-type07-section.bg-grey {
   background-color: $color-light-grey;
 }
 
-.intro-type05-content {
-  padding: 64px 0;
-}
-.intro-type05-main-text {
-  margin-bottom: 200px;
-}
-.intro-type05-content .body-text-item+.body-text-item {
-  margin-top: 80px;
+.intro-type07-content {
+  padding-block: 5.2%;
 }
 
-/*----- intro-section 圖片 -----*/
-.intro-type05-pic {
-  height: 100%;
-  margin-right: calc(-9.33333% - 12px);
+/*----- intro-type07-section 圖片 -----*/
+.intro-type07-pic {
+  aspect-ratio: 1663/878;
 }
 
-.intro-type05-pic img {
+.intro-type07-pic img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /*----- intro-section 文字 -----*/
-.intro-type05-section h2 {
+.intro-type07-text h2 {
   font-family: $font-Century-Gothic;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
@@ -39,18 +32,8 @@
   color: $color-mh-red;
   margin-bottom: 80px;
 }
-.intro-type05-section .body-text-title {
-  font-family: $font-DMsans;
-  // 超級文字縮放公式
-  // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 25px, 35px);
-  line-height: 1.37;
-  font-weight: 500;
-  color: $color-mh-red;
-}
 
-
-.intro-type05-section p {
+.intro-type07-text p {
   font-family: $font-DMsans;
   // 超級文字縮放公式
   // minWidth(px), maxWidth(px), minFont(px), maxFont(px)
@@ -60,7 +43,7 @@
   color: $color-black;
 }
 
-.intro-type05-section a {
+.intro-type07-text a {
   display: inline-block;
   font-family: $font-DMsans;
   // 超級文字縮放公式
@@ -75,59 +58,81 @@
 }
 
 
-
-
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 @media screen and (max-width: 1536px) {
-  .intro-type05-main-text {
-      margin-bottom: 80px;
-    }
-  .intro-type05-section h2 {
-    margin-bottom: 64px;
+  .our-story01-pic {
+    width: 400px;
+    margin-left: 10%;
   }
-  .intro-type05-content .body-text-item + .body-text-item {
-    margin-top: 64px;
+
+  .intro-type07-text p {
+    margin-bottom: 56px;
   }
-    
+
 }
 
 /*----- max-width 1200 -----*/
 @media screen and (max-width: 1200px) {
-  
+  .intro-type07-content {
+    padding: 80px 0;
+  }
+
+  .intro-type07-section.townships .intro-type07-pic {
+    margin-bottom: 80px;
+  }
+
+  .our-story01-pic {
+    width: 300px;
+    margin-left: 0;
+  }
 }
-    
+
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-type05-pic {
-    height: 100%;
-    margin-right: 0;
+  .intro-type07-section.bg-half {
+    background-image: linear-gradient(to right, white 0% 100%);
   }
-  .intro-type05-content {
+
+  .intro-type07-content {
     padding: 20px 0;
   }
-  .intro-type05-main-text {
-    margin-bottom: 64px;
+
+  .intro-type07-section.townships .intro-type07-pic {
+    margin-bottom: 20px;
   }
-  .intro-type05-section h2 {
-    margin-bottom: 32px;
+
+  .our-story01-pic {
+    width: 300px;
+    margin: 0 auto 20px auto;
   }
-  .intro-type05-content .body-text-item + .body-text-item {
-    margin-top: 32px;
+
+  .intro-type07-text p+p {
+    margin-top: 24px;
   }
-  .intro-type05-text {
+
+  .intro-type07-text {
     margin: 0 20px 20px 20px;
   }
 
-  .intro-type05-pic {
+  .intro-type07-pic {
     margin: 0 20px;
   }
+
 }
 
 /*----- max-width 768 -----*/
 @media screen and (max-width: 768px) {}
 
 /*----- max-width 576 -----*/
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .intro-type07-text {
+    margin: 20px 0;
+  }
+
+  .intro-type07-pic {
+    margin: 0;
+  }
+}
