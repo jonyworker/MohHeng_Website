@@ -112,6 +112,8 @@ main {
   }
 }
 
+/* Single property */
+/* Multiple properties with same values */
 /*!
  * Bootstrap Grid v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -4985,7 +4987,7 @@ main {
 /*///////////////////////////////
 ===== Base Typography START =====
 ///////////////////////////////*/
-.intro h2 {
+.intro-section h2 {
   font-family: "century-gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -4994,23 +4996,23 @@ main {
   color: #D51826;
 }
 
-.intro h2 {
+.intro-section h2 {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro h2 {
+  .intro-section h2 {
     font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro h2 {
+  .intro-section h2 {
     font-size: 52px;
   }
 }
 
-.intro h3 {
+.intro-section h3 {
   font-family: "century-gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -5019,23 +5021,23 @@ main {
   color: #D51826;
 }
 
-.intro h3 {
+.intro-section h3 {
   font-size: 28px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro h3 {
+  .intro-section h3 {
     font-size: calc(28px + 16 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro h3 {
+  .intro-section h3 {
     font-size: 44px;
   }
 }
 
-.intro p {
+.intro-section p {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5044,23 +5046,23 @@ main {
   color: #000;
 }
 
-.intro p {
+.intro-section p {
   font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro p {
+  .intro-section p {
     font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro p {
+  .intro-section p {
     font-size: 28px;
   }
 }
 
-.intro a {
+.intro-section a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -5073,18 +5075,18 @@ main {
   background-color: #D51826;
 }
 
-.intro a {
+.intro-section a {
   font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro a {
+  .intro-section a {
     font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro a {
+  .intro-section a {
     font-size: 28px;
   }
 }
@@ -5434,14 +5436,27 @@ main {
 /*////////////////////////////////////
 ===== Banner-Video Section START =====
 ////////////////////////////////////*/
-.banner-video-section.bg-grey {
+.video-section.bg-grey {
   background-color: #f2f2f2;
 }
 
-.banner-video-content {
-  padding: 32px 20px;
+.video-content {
+  padding: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .video-content {
+    padding: calc(1.51515vw + 8.36364px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .video-content {
+    padding: 32px;
+  }
+}
+
+/*----- video-section 圖片 -----*/
 .video-box {
   width: 100%;
   aspect-ratio: 560/315;
@@ -5456,23 +5471,56 @@ main {
   vertical-align: middle;
 }
 
+/*----- video-section 文字 -----*/
 .video-box h2 {
   position: absolute;
-  left: 80px;
-  bottom: 72px;
   font-family: "century-gothic", sans-serif;
-  line-height: 1.23;
+  font-style: normal;
   font-weight: 700;
+  line-height: 1.23;
+  letter-spacing: 0;
   color: #fff;
 }
 
 .video-box h2 {
-  font-size: 32px;
+  left: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .video-box h2 {
-    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+    left: calc(7.57576vw - 38.18182px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .video-box h2 {
+    left: 80px;
+  }
+}
+
+.video-box h2 {
+  bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .video-box h2 {
+    bottom: calc(6.56566vw - 30.42424px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .video-box h2 {
+    bottom: 72px;
+  }
+}
+
+.video-box h2 {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .video-box h2 {
+    font-size: calc(24px + 28 * ((100vw - 768px) / 768));
   }
 }
 
@@ -5486,144 +5534,215 @@ main {
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
-@media screen and (max-width: 1536px) {
-  .video-box h2 {
-    left: 56px;
-    bottom: 40px;
-    font-size: 39px;
-  }
-}
-
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
-@media screen and (max-width: 992px) {
-  .banner-video-content {
-    padding: 20px;
-  }
-  .video-box h2 {
-    left: 32px;
-    bottom: 24px;
-  }
-}
-
 /*----- max-width 768 -----*/
-@media screen and (max-width: 768px) {
-  .video-box h2 {
-    left: 16px;
-    bottom: 16px;
-    font-size: 29.25px;
-  }
-}
-
 /*----- max-width 576 -----*/
-@media screen and (max-width: 576px) {
-  .banner-video-content {
-    padding: 20px 0;
-  }
-  .video-box h2 {
-    font-size: 22.125px;
-  }
-}
-
-/*////////////////////////////////////
-===== Intro-type01 Section START =====
-////////////////////////////////////*/
-/*----- intro-section 灰底 -----*/
-.intro-type01-section.bg-grey {
+/*///////////////////////////////
+===== Intro - Default START =====
+///////////////////////////////*/
+/*----- intro-type02-section 灰底 -----*/
+.intro-section.bg-grey {
   background-color: #f2f2f2;
 }
 
-.intro-type01-content {
-  padding: 64px 0;
+.intro-section.bg-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(0, #f2f2f2));
+  background-image: linear-gradient(to right, white 0% 50%, #f2f2f2 0);
 }
 
-/*----- intro-section 圖片 -----*/
-.intro-type01-pic {
-  border-top-right-radius: 52px;
-  aspect-ratio: 832/952;
-  overflow: hidden;
+.intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.intro-type01-pic img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media screen and (min-width: 768px) {
+  .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
 }
 
-/*----- intro-section 文字 -----*/
-.intro-type01-text h2 {
+@media screen and (min-width: 1560px) {
+  .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 文字設定 -----*/
+.intro-section h2 {
   font-family: "century-gothic", sans-serif;
-  line-height: 1.23;
+  font-style: normal;
   font-weight: 700;
+  line-height: 1.23;
+  letter-spacing: 0;
   color: #D51826;
-  margin-bottom: 80px;
 }
 
-.intro-type01-text h2 {
+.intro-section h2 {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-type01-text h2 {
+  .intro-section h2 {
     font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-type01-text h2 {
+  .intro-section h2 {
     font-size: 52px;
   }
 }
 
-.intro-type01-text p {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 80px;
+.intro-section h3 {
+  font-family: "century-gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.23;
+  letter-spacing: 0;
+  color: #D51826;
 }
 
-.intro-type01-text p {
+.intro-section h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section h3 {
+    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-section h3 {
+    font-size: 44px;
+  }
+}
+
+.intro-section p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #000;
+}
+
+.intro-section p {
   font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-type01-text p {
+  .intro-section p {
     font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-type01-text p {
+  .intro-section p {
     font-size: 28px;
   }
 }
 
-.intro-type01-text a {
+.intro-section a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
-  line-height: 1.4;
+  font-style: normal;
   font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
   color: #fff;
   padding: 12px 24px;
   border-radius: 100px;
   background-color: #D51826;
 }
 
-.intro-type01-text a {
+.intro-section a {
   font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-type01-text a {
+  .intro-section a {
     font-size: calc(18px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-type01-text a {
+  .intro-section a {
     font-size: 28px;
+  }
+}
+
+/*----- intro-section 圖片設定 -----*/
+.intro-pic img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*////////////////////////////////////
+===== Intro-type01 Section START =====
+////////////////////////////////////*/
+.picWithLink .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .picWithLink .intro-content {
+    padding-top: calc(13.63636vw - 84.72727px);
+    padding-bottom: calc(13.63636vw - 84.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .picWithLink .intro-content {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.picWithLink .intro-pic {
+  border-top-right-radius: 52px;
+  aspect-ratio: 832/952;
+  overflow: hidden;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.picWithLink .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.picWithLink .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.picWithLink .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.intro-section.picWithLink .intro-text p {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.picWithLink .intro-text p {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.picWithLink .intro-text p {
+    margin-bottom: 80px;
   }
 }
 
@@ -5631,35 +5750,19 @@ main {
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
-@media screen and (max-width: 1536px) {
-  .intro-type01-text h2,
-  .intro-type01-text p {
-    margin-bottom: 56px;
-  }
-}
-
 /*----- max-width 1200 -----*/
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-type01-content {
-    padding: 20px 0;
-  }
-  .intro-type01-text {
-    margin: 0 20px 20px 20px;
-  }
-  .intro-type01-pic {
-    margin: 0 20px;
+  .intro-section.picWithLink .intro-text {
+    padding: 0 20px 20px 20px;
   }
 }
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .intro-type01-text {
-    margin: 20px 0;
-  }
-  .intro-type01-pic {
-    margin: 0;
+  .intro-section.picWithLink .intro-text {
+    padding: 20px 0;
   }
 }
 

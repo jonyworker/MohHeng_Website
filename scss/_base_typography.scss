@@ -3,26 +3,26 @@
 ===== Base Typography START =====
 ///////////////////////////////*/
 
-.intro h2 {
+.intro-section h2 {
   @include heading-2;
   color: $color-main;
 }
 
-.intro h3 {
+.intro-section h3 {
   @include heading-3;
-  color: $color-mh-red;
+  color: $color-main;
 }
 
-.intro p {
+.intro-section p {
   @include body-text;
   color: $color-black;
 }
 
-.intro a {
+.intro-section a {
   display: inline-block;
   @include body-text;
   color: $color-white;
   padding: 12px 24px;
   border-radius: 100px;
-  background-color: $color-mh-red;
+  background-color: $color-main;
 }

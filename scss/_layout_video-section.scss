@@ -1,0 +1,53 @@
+/*////////////////////////////////////
+===== Banner-Video Section START =====
+////////////////////////////////////*/
+.video-section.bg-grey {
+  background-color: $color-light-grey;
+}
+.video-content {
+  @include interpolate(padding, 768px, 1560px, 20px, 32px);
+}
+
+/*----- video-section 圖片 -----*/
+// ▽▽ type01-only ▽▽
+.video-box {
+  width: 100%;
+  aspect-ratio: 560/315;
+  position: relative;
+  border-top-right-radius: 52px;
+  overflow: hidden;
+}
+.video-box video {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/*----- video-section 文字 -----*/
+// ▽▽ type01-only ▽▽
+.video-box h2 {
+  position: absolute;
+  @include interpolate(left, 768px, 1560px, 20px, 80px);
+  @include interpolate(bottom, 768px, 1560px, 20px, 72px);
+  @include font($font-Century-Gothic, normal, null, 700, 1.23, 0);
+  @include fluid-type(768px, 1536px,24px, 52px);
+  color: $color-white;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
