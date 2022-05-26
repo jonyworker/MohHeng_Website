@@ -28,6 +28,14 @@
   @include fluid-type(768px, 1536px, 28px, 44px);
 }
 
+/*----- 字體 - heading-4 -----*/
+// TODO:mixin 字體 - heading-4
+@mixin heading-4 {
+  @include font($font-DMsans, normal, null, 500, 1.37, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 25px, 35px);
+}
+
 /*----- 字體 - body-text -----*/
 // TODO:mixin 字體 - body-text
 @mixin body-text {

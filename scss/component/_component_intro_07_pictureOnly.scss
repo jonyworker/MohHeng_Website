@@ -1,0 +1,11 @@
+/*////////////////////////////////////////////
+===== Intro-07 pictureOnly Section START =====
+////////////////////////////////////////////*/
+.pictureOnly .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-section 圖片 -----*/
+.pictureOnly .intro-pic {
+  aspect-ratio: 1663/878;
+}

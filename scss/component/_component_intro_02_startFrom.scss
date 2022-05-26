@@ -1,0 +1,54 @@
+/*////////////////////////////////////////////
+===== Intro-02 startFrom Section START =====
+////////////////////////////////////////////*/
+.startFrom .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+.startFrom .row.mb-128  {
+  @include interpolate(margin-bottom, 992px, 1560px, 0px, 128px);
+}
+
+/*----- intro-section 圖片 -----*/
+.startFrom .intro-pic.map {
+  border-radius: 0px;
+}
+.startFrom .intro-pic.big {
+  aspect-ratio: 1664/739;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.startFrom .intro-text h2 {
+  // ▽▽ type02-only ▽▽
+  @include interpolate((margin-bottom), 768px, 1560px, 48px, 80px);
+}
+
+.intro-section.startFrom .intro-text p + p {
+  @include interpolate((margin-top), 768px, 1560px, 24px, 40px);
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-text {
+    margin: 20px;
+  }
+}
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-text {
+    margin: 20px 0;
+  }
+}

@@ -43,6 +43,10 @@
 }
 
 /*----- intro-section 圖片設定 -----*/
+.intro-pic {
+  border-top-right-radius: 52px;
+  overflow: hidden;
+}
 .intro-pic img {
   width: 100%;
   height: 100%;

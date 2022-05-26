@@ -1,0 +1,41 @@
+/*///////////////////////////////////////////////
+===== Intro-02 ruralTownships Section START =====
+///////////////////////////////////////////////*/
+.ruralTownships .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+.ruralTownships .row.mb-128 {
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 128px);
+}
+
+/*----- intro-section 圖片 -----*/
+.ruralTownships .intro-pic {
+  aspect-ratio: 1664/739;
+}
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.bg-gradient {
+    background-image: linear-gradient(to right, white 0% 100%);
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  
+}

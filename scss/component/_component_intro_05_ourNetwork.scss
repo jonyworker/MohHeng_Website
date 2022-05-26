@@ -1,0 +1,53 @@
+/*///////////////////////////////////////////
+===== Intro-05 ourNetwork Section START =====
+///////////////////////////////////////////*/
+.ourNetwork .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.ourNetwork .intro-pic {
+  height: 100%;
+  margin-right: calc(-9.33333% - 12px);
+  border-radius: 0;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourNetwork .intro-text {
+  @include interpolate(margin-bottom, 768px, 1560px, 48px, 80px);
+}
+.intro-section.ourNetwork .intro-text h2 {
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 64px);
+}
+.ourNetwork .intro-text-item + .intro-text-item {
+  @include interpolate(margin-top, 768px, 1560px, 20px, 64px);
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourNetwork .intro-pic {
+    margin-right: 0;
+  }
+  .intro-section.ourNetwork .intro-text-list,
+  .intro-section.ourNetwork .intro-text {
+    margin: 0 20px 20px 20px;
+  }
+  .ourNetwork .intro-content {
+    padding-bottom: 0;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

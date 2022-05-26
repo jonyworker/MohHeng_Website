@@ -1,6 +1,6 @@
-/*////////////////////////////////////
-===== Intro-type01 Section START =====
-////////////////////////////////////*/
+/*////////////////////////////////////////////
+===== Intro-01 picWithLink Section START =====
+////////////////////////////////////////////*/
 .picWithLink .intro-content {
   @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 128px);
 }
@@ -8,9 +8,7 @@
 /*----- intro-section 圖片 -----*/
  // ▽▽ type01-only ▽▽
 .picWithLink .intro-pic {
-  border-top-right-radius: 52px;
   aspect-ratio: 832/952;
-  overflow: hidden;
 }
 
 

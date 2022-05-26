@@ -12,6 +12,10 @@
   @include heading-3;
   color: $color-main;
 }
+.intro-section h3.list-title {
+  @include heading-4;
+  color: $color-main;
+}
 
 .intro-section p {
   @include body-text;
