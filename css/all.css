@@ -6342,6 +6342,72 @@ main {
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
+/*/////////////////////////////////////////////
+===== Intro-05 ourConsumers Section START =====
+/////////////////////////////////////////////*/
+.ourConsumers .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourConsumers .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourConsumers .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.ourConsumers .intro-pic {
+  height: 100%;
+  margin-right: calc(-9.33333% - 12px);
+  border-radius: 0;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourConsumers .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourConsumers .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourConsumers .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourConsumers .intro-pic {
+    margin-right: 0;
+  }
+  .intro-section.ourConsumers .intro-text {
+    margin: 0 20px 20px 20px;
+  }
+  .ourConsumers .intro-content {
+    padding-bottom: 0;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 /*////////////////////////////////////
 ===== Intro-type06 Section START =====
 ////////////////////////////////////*/
