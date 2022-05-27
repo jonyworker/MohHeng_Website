@@ -13,15 +13,10 @@
 }
 
 /*----- intro-section 文字 -----*/
-// .intro-section.ourConsumers .intro-text {
-//   @include interpolate(margin-bottom, 768px, 1560px, 48px, 80px);
-// }
 .intro-section.ourConsumers .intro-text h2 {
   @include interpolate(margin-bottom, 768px, 1560px, 48px, 80px);
 }
-// .ourConsumers .intro-text-item + .intro-text-item {
-//   @include interpolate(margin-top, 768px, 1560px, 20px, 64px);
-// }
+
 
 /*/////////////////////////////
 ===== Desktop First START =====

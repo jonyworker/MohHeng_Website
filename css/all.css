@@ -5717,20 +5717,20 @@ main {
 /*////////////////////////////////////////////
 ===== Intro-01 picWithLink Section START =====
 ////////////////////////////////////////////*/
-.picWithLink .intro-content {
+.intro-section.picWithLink .intro-content {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .picWithLink .intro-content {
+  .intro-section.picWithLink .intro-content {
     padding-top: calc(13.63636vw - 84.72727px);
     padding-bottom: calc(13.63636vw - 84.72727px);
   }
 }
 
 @media screen and (min-width: 1560px) {
-  .picWithLink .intro-content {
+  .intro-section.picWithLink .intro-content {
     padding-top: 128px;
     padding-bottom: 128px;
   }
@@ -5790,6 +5790,86 @@ main {
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .intro-section.picWithLink .intro-text {
+    padding: 20px 0;
+  }
+}
+
+/*////////////////////////////////////////////
+===== Intro-01 ourPartners Section START =====
+////////////////////////////////////////////*/
+.intro-section.ourPartners .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPartners .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPartners .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.ourPartners .intro-pic {
+  aspect-ratio: 832/952;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourPartners .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPartners .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPartners .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.intro-section.ourPartners .intro-text p {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPartners .intro-text p {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPartners .intro-text p {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourPartners .intro-text {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.ourPartners .intro-text {
     padding: 20px 0;
   }
 }
@@ -6047,127 +6127,38 @@ main {
   }
 }
 
-/*//////////////////////////////////////////////
-===== Intro-type04 Section (橫向滑動) START =====
-/////////////////////////////////////////////*/
-/*----- intro-section 灰底 -----*/
-.intro-type04-section.bg-grey {
-  background-color: #f2f2f2;
-}
-
-.intro-type04-content {
-  padding: 128px 0;
-}
-
-/*----- intro-section 文字 -----*/
-.intro-type04-section h2 {
-  font-family: "century-gothic", sans-serif;
-  line-height: 1.23;
-  font-weight: 700;
-  color: #D51826;
-  margin-bottom: 128px;
-}
-
-.intro-type04-section h2 {
-  font-size: 32px;
+/*///////////////////////////////////
+===== Intro-04 ourHistory START =====
+///////////////////////////////////*/
+.intro-section.ourHistory .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-type04-section h2 {
-    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+  .intro-section.ourHistory .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
   }
 }
 
-@media screen and (min-width: 1536px) {
-  .intro-type04-section h2 {
-    font-size: 52px;
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
-.intro-type04-section .history-card-text h3 {
-  font-family: "century-gothic", sans-serif;
-  line-height: 1.4;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 16px;
-}
-
-.intro-type04-section .history-card-text h3 {
-  font-size: 28px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-type04-section .history-card-text h3 {
-    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-type04-section .history-card-text h3 {
-    font-size: 44px;
-  }
-}
-
-.intro-type04-section p {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.43;
-  font-weight: 400;
-  color: #000;
-}
-
-.intro-type04-section p {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-type04-section p {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-type04-section p {
-    font-size: 28px;
-  }
-}
-
-.intro-type04-section a {
-  display: inline-block;
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.43;
-  font-weight: 400;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 100px;
-  background-color: #D51826;
-}
-
-.intro-type04-section a {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-type04-section a {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-type04-section a {
-    font-size: 28px;
-  }
-}
-
-/*----- history-card-clip -----*/
-.history-card-clip {
+/*----- 卡片 card-clip -----*/
+.intro-section.ourHistory .card-clip {
   max-width: 1792px;
   margin-right: calc(-4.67777% - 12px);
   overflow-y: hidden;
   overflow-x: scroll;
 }
 
-/*----- history-card-list -----*/
-.intro-type04-section .history-card-list {
+/*----- 卡片 card-list -----*/
+.intro-section.ourHistory .card-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6175,73 +6166,112 @@ main {
       flex-wrap: nowrap;
 }
 
-.intro-type04-section .history-card-list .history-card-item {
+.intro-section.ourHistory .card-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 38.6979%;
 }
 
-.intro-type04-section .history-card-list .history-card-item + .history-card-item {
-  margin-left: 96px;
+.intro-section.ourHistory .card-item + .card-item {
+  margin-left: 32px;
 }
 
-/*----- history-card-pic -----*/
-.intro-type04-section .history-card-pic {
+@media screen and (min-width: 768px) {
+  .intro-section.ourHistory .card-item + .card-item {
+    margin-left: calc(8.08081vw - 30.06061px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .card-item + .card-item {
+    margin-left: 96px;
+  }
+}
+
+/*----- card-pic -----*/
+.intro-section.ourHistory .card-pic {
   border-top-right-radius: 52px;
-  max-width: 743px;
   overflow: hidden;
-  margin-bottom: 56px;
 }
 
-.intro-type04-section .history-card-pic img {
+.intro-section.ourHistory .card-pic {
+  max-width: 440px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourHistory .card-pic {
+    max-width: calc(38.25758vw + 146.18182px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .card-pic {
+    max-width: 743px;
+  }
+}
+
+.intro-section.ourHistory .card-pic {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourHistory .card-pic {
+    margin-bottom: calc(3.0303vw + 8.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .card-pic {
+    margin-bottom: 56px;
+  }
+}
+
+.intro-section.ourHistory .card-pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/*----- history-card-text -----*/
+/*----- intro-section 文字 -----*/
+.intro-section.ourHistory .intro-text {
+  margin: 0;
+}
+
+.intro-section.ourHistory .intro-text h2 {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourHistory .intro-text h2 {
+    margin-bottom: calc(6.06061vw + 33.45455px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .intro-text h2 {
+    margin-bottom: 128px;
+  }
+}
+
+.intro-section.ourHistory .intro-text h3 {
+  margin-bottom: 16px;
+}
+
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/
 /*----- max-width 1200 -----*/
-@media screen and (max-width: 1200px) {
-  .intro-type04-content {
-    padding: 80px 0;
-  }
-  .intro-type04-section .history-card-list .history-card-item + .history-card-item {
-    margin-left: 56px;
-  }
-}
-
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-type04-content {
-    padding: 20px 0;
-  }
-  .intro-type04-section .history-card-list .history-card-item + .history-card-item {
-    margin-left: 32px;
-  }
-  .history-card-clip {
+  .intro-section.ourHistory .card-clip {
     margin-right: -12px;
-  }
-  .intro-type04-section .history-card-pic {
-    margin-bottom: 32px;
-  }
-  .intro-type04-section .history-card-pic {
-    max-width: 600px;
   }
 }
 
 /*----- max-width 768 -----*/
-@media screen and (max-width: 768px) {
-  .intro-type04-section .history-card-pic {
-    max-width: 440px;
-  }
-}
-
 /*----- max-width 576 -----*/
 /*///////////////////////////////////////////
 ===== Intro-05 ourNetwork Section START =====
@@ -6408,130 +6438,108 @@ main {
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
-/*////////////////////////////////////
-===== Intro-type06 Section START =====
-////////////////////////////////////*/
-/*----- intro-type06-section 灰底 -----*/
-.intro-type06-section.bg-grey {
-  background-color: #f2f2f2;
+/*////////////////////////////////
+===== Intro-06 Malaysia START =====
+/////////////////////////////////*/
+/*----- intro-section 上下間距 -----*/
+.intro-section.malaysia .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.intro-type06-section .main-image {
-  margin-top: -14%;
+@media screen and (min-width: 768px) {
+  .intro-section.malaysia .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
 }
 
-.intro-type06-section .main-image-content {
-  -o-object-fit: cover;
-     object-fit: cover;
+@media screen and (min-width: 1560px) {
+  .intro-section.malaysia .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
 
-.intro-type06-content {
-  padding-block: 7%;
+/*----- intro-section 文字區塊 -----*/
+.intro-section.malaysia .intro-text:last-of-type {
+  margin-bottom: 32px;
 }
 
-.intro-type06-content .intro-type06-item {
+@media screen and (min-width: 992px) {
+  .intro-section.malaysia .intro-text:last-of-type {
+    margin-bottom: calc(8.4507vw - 51.83099px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.malaysia .intro-text:last-of-type {
+    margin-bottom: 80px;
+  }
+}
+
+/*----- intro-section 文字列表 -----*/
+.intro-section.malaysia .intro-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.intro-type06-content .intro-type06-item + .intro-type06-item {
-  margin-top: clamp(2rem, 2vw, 4.8rem);
+.intro-section.malaysia .intro-item + .intro-item {
+  margin-top: 32px;
 }
 
-.intro-type06-content .intro-type06-item p:first-of-type {
+@media screen and (min-width: 768px) {
+  .intro-section.malaysia .intro-item + .intro-item {
+    margin-top: calc(6.06061vw - 14.54545px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.malaysia .intro-item + .intro-item {
+    margin-top: 80px;
+  }
+}
+
+.intro-section.malaysia .intro-item p:first-of-type {
   width: 14%;
-  margin-right: calc(1.275rem + 0.3vw);
   text-align: right;
   font-weight: 700;
   color: #D51826;
 }
 
-@media (min-width: 1200px) {
-  .intro-type06-content .intro-type06-item p:first-of-type {
-    margin-right: 1.5rem;
-  }
-}
-
-.intro-type06-content .intro-type06-text:last-of-type {
-  margin-bottom: clamp(2rem, 2vw, 4.8rem);
-}
-
-/*----- intro-section 文字基礎設定 -----*/
-.intro-type06-text h2 {
-  font-family: "century-gothic", sans-serif;
-  line-height: 1.23;
-  font-weight: 700;
-  color: #D51826;
-}
-
-.intro-type06-text h2 {
-  font-size: 32px;
+.intro-section.malaysia .intro-item p:first-of-type {
+  margin-right: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-type06-text h2 {
-    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+  .intro-section.malaysia .intro-item p:first-of-type {
+    margin-right: calc(1.0101vw + 8.24242px);
   }
 }
 
-@media screen and (min-width: 1536px) {
-  .intro-type06-text h2 {
-    font-size: 52px;
+@media screen and (min-width: 1560px) {
+  .intro-section.malaysia .intro-item p:first-of-type {
+    margin-right: 24px;
   }
 }
 
-.intro-type06-text p {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  color: #000;
+.intro-section.malaysia .intro-text {
+  margin: 0;
 }
 
-.intro-type06-text p {
-  font-size: 18px;
+/*----- intro-section 圖片 -----*/
+.intro-section.malaysia .intro-pic {
+  margin-top: -23%;
+  border-radius: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .intro-type06-text p {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
-  }
+.intro-section.malaysia .intro-pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media screen and (min-width: 1536px) {
-  .intro-type06-text p {
-    font-size: 28px;
-  }
-}
-
-.intro-type06-text a {
-  display: inline-block;
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 100px;
-  background-color: #D51826;
-}
-
-.intro-type06-text a {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-type06-text a {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-type06-text a {
-    font-size: 28px;
-  }
-}
-
-/*/////////////////////////////
+/*///////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
 /*----- max-width 1536 -----*/

@@ -1,0 +1,76 @@
+/*///////////////////////////////////
+===== Intro-04 ourHistory START =====
+///////////////////////////////////*/
+.intro-section.ourHistory .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- 卡片 card-clip -----*/
+.intro-section.ourHistory .card-clip {
+  max-width: 1792px;
+  margin-right: calc(-4.67777% - 12px);
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+/*----- 卡片 card-list -----*/
+.intro-section.ourHistory .card-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.intro-section.ourHistory .card-item {
+  flex: 0 0 100%; //grow shrink basic
+  max-width: 38.6979%;
+}
+
+.intro-section.ourHistory .card-item + .card-item {
+  @include interpolate(margin-left, 768px, 1560px, 32px, 96px);
+}
+/*----- card-pic -----*/
+.intro-section.ourHistory .card-pic {
+  @include interpolate(max-width, 768px, 1560px, 440px, 743px);
+  border-top-right-radius: 52px;
+  @include interpolate(margin-bottom, 768px, 1560px, 32px, 56px);
+  overflow: hidden;
+}
+
+.intro-section.ourHistory .card-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourHistory .intro-text {
+  margin: 0;
+}
+.intro-section.ourHistory .intro-text h2 {
+  @include interpolate(margin-bottom, 768px, 1560px, 80px, 128px);
+}
+.intro-section.ourHistory .intro-text h3 {
+  margin-bottom: 16px;
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourHistory .card-clip {
+    margin-right: -12px;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
