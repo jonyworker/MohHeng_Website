@@ -86,6 +86,10 @@ a {
   color: #000;
 }
 
+* {
+  outline: 1px solid #5a7;
+}
+
 .container-1920 {
   max-width: 1920px;
 }
@@ -5895,6 +5899,99 @@ main {
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .intro-section.ourPartners .intro-text {
+    padding: 20px 0;
+  }
+}
+
+/*////////////////////////////////////////////
+===== Intro-01 joinUs Section START =====
+////////////////////////////////////////////*/
+.intro-section.joinUs .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.joinUs .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.joinUs .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.joinUs .intro-pic {
+  aspect-ratio: 832/952;
+}
+
+.joinUs .intro-pic img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.joinUs .intro-text {
+  margin: 0;
+}
+
+.intro-section.joinUs .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.joinUs .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.joinUs .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.intro-section.joinUs .intro-text p {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.joinUs .intro-text p {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.joinUs .intro-text p {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.joinUs .intro-text {
+    padding: 0 20px 20px 20px;
+  }
+  .joinUs .intro-pic {
+    margin-top: -30%;
+    padding-inline: 3%;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.joinUs .intro-text {
     padding: 20px 0;
   }
 }

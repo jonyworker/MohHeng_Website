@@ -1,0 +1,62 @@
+/*////////////////////////////////////////////
+===== Intro-01 joinUs Section START =====
+////////////////////////////////////////////*/
+.intro-section.joinUs .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-section 圖片 -----*/
+// ▽▽ type01-only ▽▽
+.joinUs .intro-pic {
+  aspect-ratio: 832/952;
+}
+.joinUs .intro-pic img {
+  object-fit: contain;
+}
+
+
+/*----- intro-section 文字 -----*/
+.intro-section.joinUs .intro-text {
+  margin: 0;
+}
+.intro-section.joinUs .intro-text h2 {
+  // ▽▽ type01-only ▽▽
+  @include interpolate((margin-bottom), 768px, 1560px, 48px, 80px);
+
+}
+
+.intro-section.joinUs .intro-text p {
+  // ▽▽ type01-only ▽▽
+  @include interpolate((margin-bottom), 768px, 1560px, 48px, 80px);
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.joinUs .intro-text {
+    padding: 0 20px 20px 20px;
+  }
+  .joinUs .intro-pic {
+    margin-top: -30%;
+    padding-inline: 3%;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.joinUs .intro-text {
+    padding: 20px 0;
+  }
+}
