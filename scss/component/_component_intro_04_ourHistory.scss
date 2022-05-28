@@ -11,7 +11,9 @@
   margin-right: calc(-4.67777% - 12px);
   overflow-y: hidden;
   overflow-x: scroll;
+  overflow-x: overlay;
 }
+
 /*----- 卡片 card-list -----*/
 .intro-section.ourHistory .card-list {
   display: flex;
@@ -20,7 +22,7 @@
 
 .intro-section.ourHistory .card-item {
   flex: 0 0 100%; //grow shrink basic
-  max-width: 38.6979%;
+  @include interpolate(max-width, 768px, 1560px, 280px, 743px);
 }
 
 .intro-section.ourHistory .card-item + .card-item {

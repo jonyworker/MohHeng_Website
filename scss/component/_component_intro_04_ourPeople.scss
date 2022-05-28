@@ -1,0 +1,95 @@
+/*//////////////////////////////////
+===== Intro-04 ourPeople START =====
+//////////////////////////////////*/
+.intro-section.ourPeople .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- 卡片 card-clip -----*/
+.intro-section.ourPeople .card-clip {
+  max-width: 1792px;
+  // margin-right: calc(-4.67777% - 12px);
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+
+/*----- 卡片 card-list 外觀 -----*/
+.intro-section.ourPeople .card-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.intro-section.ourPeople .card-item {
+  flex: 0 0 100%; //grow shrink basic
+  @include interpolate(max-width, 768px, 1560px, 280px, 410px);
+}
+//兩個 director的 card item
+.intro-section.ourPeople .card-item:last-of-type {
+  flex: 0 0 100%; //grow shrink basic
+  @include interpolate(min-width, 768px, 1560px, 620px, 709px);
+}
+
+.intro-section.ourPeople .card-item+.card-item {
+  @include interpolate(margin-left, 768px, 1560px, 32px, 67px);
+}
+
+/*----- card-pic -----*/
+.intro-section.ourPeople .card-item .intro-pic {
+  @include interpolate((max-width, max-height), 768px, 1560px, 100px, 256px);
+  @include interpolate(margin-bottom, 768px, 1560px, 32px, 56px);
+  border-radius: 500px;
+}
+
+/*----- 卡片 card-director-wrap -----*/
+.intro-section.ourPeople .card-item .director-wrap {
+  display: flex;
+  @include interpolate(gap, 768px, 1560px, 24px, 50px);
+}
+.intro-section.ourPeople .card-item .director-left,
+.intro-section.ourPeople .card-item .director-right {
+  flex: 1;
+} 
+
+
+
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourPeople .intro-text {
+  margin: 0;
+}
+.intro-section.ourPeople .intro-text h2 {
+  @include interpolate(margin-bottom, 768px, 1560px, 80px, 128px);
+}
+.intro-section.ourPeople .intro-text .medium {
+  color: $color-main;
+}
+.intro-section.ourPeople .intro-text h3:last-of-type {
+  @include interpolate(margin-bottom, 768px, 1560px, 24px, 30px);
+}
+.intro-section.ourPeople .card-item:last-of-type .intro-text p {
+  padding-right: 30%;
+  background-color: #f00;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  // .intro-section.ourPeople .card-clip {
+  //   margin-right: -12px;
+  // }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

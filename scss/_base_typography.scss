@@ -12,9 +12,17 @@
   @include heading-3;
   color: $color-main;
 }
-.intro-section h3.list-title {
-  @include heading-4;
-  color: $color-main;
+.intro-section h3.bold {
+  @include heading-4-B;
+  color: $color-black;
+}
+.intro-section h3.medium {
+  @include heading-4-M;
+  color: $color-black;
+}
+.intro-section h3.regular {
+  @include heading-4-R;
+  color: $color-black;
 }
 
 .intro-section p {

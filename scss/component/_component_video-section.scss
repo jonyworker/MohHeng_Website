@@ -25,12 +25,10 @@
 
 /*----- video-section 文字 -----*/
 // ▽▽ type01-only ▽▽
-.video-box h2 {
+.video-box  .intro-text h2 {
   position: absolute;
   @include interpolate(left, 768px, 1560px, 20px, 80px);
   @include interpolate(bottom, 768px, 1560px, 20px, 72px);
-  @include font($font-Century-Gothic, normal, null, 700, 1.23, 0);
-  @include fluid-type(768px, 1536px,24px, 52px);
   color: $color-white;
 }
 

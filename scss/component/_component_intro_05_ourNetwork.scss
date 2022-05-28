@@ -19,6 +19,9 @@
 .intro-section.ourNetwork .intro-text h2 {
   @include interpolate(margin-bottom, 768px, 1560px, 20px, 64px);
 }
+.intro-section.ourNetwork .intro-text-item h3.medium {
+  color: $color-main;
+}
 .ourNetwork .intro-text-item + .intro-text-item {
   @include interpolate(margin-top, 768px, 1560px, 20px, 64px);
 }

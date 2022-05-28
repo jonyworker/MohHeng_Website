@@ -67,10 +67,10 @@ img {
 ===== Font Mixin START =====
 //////////////////////////*/
 /*----- 字體 - 基礎組件 -----*/
-/*----- 字體 - heading-2 -----*/
-/*----- 字體 - heading-3 -----*/
-/*----- 字體 - heading-4 -----*/
-/*----- 字體 - body-text -----*/
+/*----- 字體 - heading-2 (52px)-----*/
+/*----- 字體 - heading-3 (44px) -----*/
+/*----- 字體 - heading-4 (35px) -----*/
+/*----- 字體 - body-text (28px) -----*/
 /*/////////////////////////
 ===== Variables START =====
 /////////////////////////*/
@@ -84,10 +84,6 @@ img {
 a {
   text-decoration: none;
   color: #000;
-}
-
-* {
-  outline: 1px solid #5a7;
 }
 
 .container-1920 {
@@ -168,27 +164,77 @@ main {
   }
 }
 
-.intro-section h3.list-title {
+.intro-section h3.bold {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.37;
   letter-spacing: 0;
-  color: #D51826;
+  color: #000;
 }
 
-.intro-section h3.list-title {
+.intro-section h3.bold {
   font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section h3.list-title {
+  .intro-section h3.bold {
     font-size: calc(25px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-section h3.list-title {
+  .intro-section h3.bold {
+    font-size: 35px;
+  }
+}
+
+.intro-section h3.medium {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: 0;
+  color: #000;
+}
+
+.intro-section h3.medium {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section h3.medium {
+    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-section h3.medium {
+    font-size: 35px;
+  }
+}
+
+.intro-section h3.regular {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.37;
+  letter-spacing: 0;
+  color: #000;
+}
+
+.intro-section h3.regular {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section h3.regular {
+    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .intro-section h3.regular {
     font-size: 35px;
   }
 }
@@ -5497,61 +5543,40 @@ main {
 }
 
 /*----- video-section 文字 -----*/
-.video-box h2 {
+.video-box .intro-text h2 {
   position: absolute;
-  font-family: "century-gothic", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.23;
-  letter-spacing: 0;
   color: #fff;
 }
 
-.video-box h2 {
+.video-box .intro-text h2 {
   left: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .video-box h2 {
+  .video-box .intro-text h2 {
     left: calc(7.57576vw - 38.18182px);
   }
 }
 
 @media screen and (min-width: 1560px) {
-  .video-box h2 {
+  .video-box .intro-text h2 {
     left: 80px;
   }
 }
 
-.video-box h2 {
+.video-box .intro-text h2 {
   bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .video-box h2 {
+  .video-box .intro-text h2 {
     bottom: calc(6.56566vw - 30.42424px);
   }
 }
 
 @media screen and (min-width: 1560px) {
-  .video-box h2 {
+  .video-box .intro-text h2 {
     bottom: 72px;
-  }
-}
-
-.video-box h2 {
-  font-size: 24px;
-}
-
-@media screen and (min-width: 768px) {
-  .video-box h2 {
-    font-size: calc(24px + 28 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .video-box h2 {
-    font-size: 52px;
   }
 }
 
@@ -6032,6 +6057,282 @@ main {
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
+/*////////////////////////////////
+===== Intro-02 ourTeam START =====
+////////////////////////////////*/
+.ourTeams .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTeams .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourTeams .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.intro-section.ourTeams .row.intro-text-wrap {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourTeams .row.intro-text-wrap {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourTeams .row.intro-text-wrap {
+    margin-bottom: 80px;
+  }
+}
+
+/*----- intro-section 小卡設定 -----*/
+.intro-section.ourTeams .intro-card {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14), 0px 15px 5px -10px rgba(0, 0, 0, 0.12), 0px 5px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14), 0px 15px 5px -10px rgba(0, 0, 0, 0.12), 0px 5px 25px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 52px;
+}
+
+.intro-section.ourTeams .intro-card {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourTeams .intro-card {
+    margin-bottom: calc(-2.52525vw + 39.39394px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourTeams .intro-card {
+    margin-bottom: 0px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.ourTeams .intro-pic {
+  aspect-ratio: 510/510;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourTeams .intro-text {
+  margin: 0;
+}
+
+.intro-section.ourTeams .intro-text h2 {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourTeams .intro-text h2 {
+    margin-bottom: calc(6.06061vw + 33.45455px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourTeams .intro-text h2 {
+    margin-bottom: 128px;
+  }
+}
+
+.intro-section.ourTeams .intro-text h3 {
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+}
+
+.intro-section.ourTeams .intro-text h3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourTeams .intro-text h3 {
+    padding-top: calc(2.77778vw - 5.33333px);
+    padding-bottom: calc(2.77778vw - 5.33333px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .intro-section.ourTeams .intro-text h3 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourTeams .intro-pic.ratio-modify {
+    aspect-ratio: 1670/588;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .intro-section.ourTeams .intro-pic.ratio-modify {
+    aspect-ratio: 1/1;
+  }
+}
+
+/*----- max-width 576 -----*/
+/*////////////////////////////////
+===== Intro-02 our3D START =====
+////////////////////////////////*/
+.our3D .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .our3D .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .our3D .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.intro-section.our3D .row.intro-text-wrap {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.our3D .row.intro-text-wrap {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.our3D .row.intro-text-wrap {
+    margin-bottom: 80px;
+  }
+}
+
+/*----- intro-section 小卡設定 -----*/
+.intro-section.our3D .intro-card {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14), 0px 15px 5px -10px rgba(0, 0, 0, 0.12), 0px 5px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14), 0px 15px 5px -10px rgba(0, 0, 0, 0.12), 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.intro-section.our3D .intro-card {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.our3D .intro-card {
+    margin-bottom: calc(-2.52525vw + 39.39394px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.our3D .intro-card {
+    margin-bottom: 0px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.our3D .intro-pic {
+  aspect-ratio: 510/510;
+  border-radius: 0;
+}
+
+.intro-section.our3D .intro-pic img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.our3D .intro-text {
+  margin: 0;
+}
+
+.intro-section.our3D .intro-text h2 {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.our3D .intro-text h2 {
+    margin-bottom: calc(6.06061vw + 33.45455px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.our3D .intro-text h2 {
+    margin-bottom: 128px;
+  }
+}
+
+.intro-section.our3D .intro-text h3 {
+  color: #000;
+  text-align: center;
+}
+
+.intro-section.our3D .intro-text h3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.our3D .intro-text h3 {
+    padding-top: calc(2.77778vw - 5.33333px);
+    padding-bottom: calc(2.77778vw - 5.33333px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .intro-section.our3D .intro-text h3 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.our3D .intro-pic.ratio-modify {
+    aspect-ratio: 1670/588;
+  }
+  .intro-section.our3D .intro-pic img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .intro-section.our3D .intro-pic.ratio-modify {
+    aspect-ratio: 1/1;
+  }
+  .intro-section.our3D .intro-pic img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+/*----- max-width 576 -----*/
 /*/////////////////////////////////////////
 ===== Intro-01 ourAsset Section START =====
 /////////////////////////////////////////*/
@@ -6155,6 +6456,7 @@ main {
   margin-right: calc(-4.67777% - 12px);
   overflow-y: hidden;
   overflow-x: scroll;
+  overflow-x: overlay;
 }
 
 /*----- 卡片 card-list -----*/
@@ -6170,7 +6472,22 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  max-width: 38.6979%;
+}
+
+.intro-section.ourHistory .card-item {
+  max-width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourHistory .card-item {
+    max-width: calc(58.4596vw - 168.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourHistory .card-item {
+    max-width: 743px;
+  }
 }
 
 .intro-section.ourHistory .card-item + .card-item {
@@ -6273,6 +6590,228 @@ main {
 
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
+/*//////////////////////////////////
+===== Intro-04 ourPeople START =====
+//////////////////////////////////*/
+.intro-section.ourPeople .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- 卡片 card-clip -----*/
+.intro-section.ourPeople .card-clip {
+  max-width: 1792px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+/*----- 卡片 card-list 外觀 -----*/
+.intro-section.ourPeople .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.intro-section.ourPeople .card-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.intro-section.ourPeople .card-item {
+  max-width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item {
+    max-width: calc(16.41414vw + 153.93939px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item {
+    max-width: 410px;
+  }
+}
+
+.intro-section.ourPeople .card-item:last-of-type {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.intro-section.ourPeople .card-item:last-of-type {
+  min-width: 620px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item:last-of-type {
+    min-width: calc(11.23737vw + 533.69697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item:last-of-type {
+    min-width: 709px;
+  }
+}
+
+.intro-section.ourPeople .card-item + .card-item {
+  margin-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item + .card-item {
+    margin-left: calc(4.41919vw - 1.93939px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item + .card-item {
+    margin-left: 67px;
+  }
+}
+
+/*----- card-pic -----*/
+.intro-section.ourPeople .card-item .intro-pic {
+  border-radius: 500px;
+}
+
+.intro-section.ourPeople .card-item .intro-pic {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item .intro-pic {
+    max-width: calc(19.69697vw - 51.27273px);
+    max-height: calc(19.69697vw - 51.27273px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item .intro-pic {
+    max-width: 256px;
+    max-height: 256px;
+  }
+}
+
+.intro-section.ourPeople .card-item .intro-pic {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item .intro-pic {
+    margin-bottom: calc(3.0303vw + 8.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item .intro-pic {
+    margin-bottom: 56px;
+  }
+}
+
+/*----- 卡片 card-director-wrap -----*/
+.intro-section.ourPeople .card-item .director-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro-section.ourPeople .card-item .director-wrap {
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-item .director-wrap {
+    gap: calc(3.28283vw - 1.21212px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-item .director-wrap {
+    gap: 50px;
+  }
+}
+
+.intro-section.ourPeople .card-item .director-left,
+.intro-section.ourPeople .card-item .director-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourPeople .intro-text {
+  margin: 0;
+}
+
+.intro-section.ourPeople .intro-text h2 {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .intro-text h2 {
+    margin-bottom: calc(6.06061vw + 33.45455px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .intro-text h2 {
+    margin-bottom: 128px;
+  }
+}
+
+.intro-section.ourPeople .intro-text .medium {
+  color: #D51826;
+}
+
+.intro-section.ourPeople .intro-text h3:last-of-type {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .intro-text h3:last-of-type {
+    margin-bottom: calc(0.75758vw + 18.18182px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .intro-text h3:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.intro-section.ourPeople .card-item:last-of-type .intro-text p {
+  padding-right: 30%;
+  background-color: #f00;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 /*///////////////////////////////////////////
 ===== Intro-05 ourNetwork Section START =====
 ///////////////////////////////////////////*/
@@ -6333,6 +6872,10 @@ main {
   .intro-section.ourNetwork .intro-text h2 {
     margin-bottom: 64px;
   }
+}
+
+.intro-section.ourNetwork .intro-text-item h3.medium {
+  color: #D51826;
 }
 
 .ourNetwork .intro-text-item + .intro-text-item {

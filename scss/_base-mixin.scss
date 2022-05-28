@@ -3,7 +3,7 @@
 ===== Font Mixin START =====
 //////////////////////////*/
 /*----- 字體 - 基礎組件 -----*/
-@mixin font ($font-family, $font-style, $font-size, $font-weight, $line-height, $letter-spacing) {
+@mixin font-info ($font-family, $font-style, $font-size, $font-weight, $line-height, $letter-spacing) {
   font-family: $font-family;
   font-style: $font-style;
   font-size: $font-size;
@@ -12,34 +12,44 @@
   letter-spacing: $letter-spacing;
 }
 
-/*----- 字體 - heading-2 -----*/
+/*----- 字體 - heading-2 (52px)-----*/
 // TODO:mixin 字體 - heading-2
 @mixin heading-2 {
-  @include font($font-Century-Gothic,normal, null, 700, 1.23, 0);
+  @include font-info ($font-Century-Gothic,normal, null, 700, 1.23, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 32px, 52px);
 }
 
-/*----- 字體 - heading-3 -----*/
+/*----- 字體 - heading-3 (44px) -----*/
 // TODO:mixin 字體 - heading-3
 @mixin heading-3 {
-  @include font($font-Century-Gothic, normal, null, 700, 1.23, 0);
+  @include font-info ($font-Century-Gothic, normal, null, 700, 1.23, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 28px, 44px);
 }
 
-/*----- 字體 - heading-4 -----*/
+/*----- 字體 - heading-4 (35px) -----*/
 // TODO:mixin 字體 - heading-4
-@mixin heading-4 {
-  @include font($font-DMsans, normal, null, 500, 1.37, 0);
+@mixin heading-4-B {
+  @include font-info ($font-DMsans, normal, null, 700, 1.37, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 25px, 35px);
+}
+@mixin heading-4-M {
+  @include font-info ($font-DMsans, normal, null, 500, 1.37, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  @include fluid-type(768px, 1536px, 25px, 35px);
+}
+@mixin heading-4-R {
+  @include font-info ($font-DMsans, normal, null, 400, 1.37, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 25px, 35px);
 }
 
-/*----- 字體 - body-text -----*/
+/*----- 字體 - body-text (28px) -----*/
 // TODO:mixin 字體 - body-text
 @mixin body-text {
-  @include font($font-DMsans, normal, null, 400, 1.4, 0);
+  @include font-info ($font-DMsans, normal, null, 400, 1.4, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   @include fluid-type(768px, 1536px, 18px, 28px);
 }

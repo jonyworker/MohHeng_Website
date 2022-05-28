@@ -1,0 +1,68 @@
+/*////////////////////////////////
+===== Intro-02 ourTeam START =====
+////////////////////////////////*/
+.ourTeams .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+.intro-section.ourTeams .row.intro-text-wrap {
+  @include interpolate(margin-bottom, 768px, 1560px, 48px, 80px);
+}
+/*----- intro-section 小卡設定 -----*/
+.intro-section.ourTeams .intro-card {
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 0px);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14),
+              0px 15px 5px -10px rgba(0, 0, 0, 0.12),
+              0px 5px 25px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 52px;
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.ourTeams .intro-pic {
+  aspect-ratio: 510/510;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourTeams .intro-text {
+  margin: 0;
+}
+
+.intro-section.ourTeams .intro-text h2 {
+  // @include interpolate(margin-bottom, 768px, 1560px, 20px, 64px);
+  @include interpolate(margin-bottom, 768px, 1560px, 80px, 128px);
+}
+.intro-section.ourTeams .intro-text h3 {
+  @include interpolate((padding-top, padding-bottom), 768px, 1920px, 16px, 48px);
+  color: $color-black;
+  text-align: center;
+  background-color: $color-white;
+}
+
+
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourTeams .intro-pic.ratio-modify {
+    aspect-ratio: 1670/588;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .intro-section.ourTeams .intro-pic.ratio-modify {
+      aspect-ratio: 1/1;
+    }
+}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
