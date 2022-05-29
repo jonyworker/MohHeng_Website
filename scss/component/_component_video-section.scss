@@ -8,8 +8,7 @@
   @include interpolate(padding, 768px, 1560px, 20px, 32px);
 }
 
-/*----- video-section 影片 -----*/
-// ▽▽ type01-only ▽▽
+/*----- video-section 影片 (video tag) -----*/
 .video-box {
   width: 100%;
   aspect-ratio: 560/315;
@@ -19,8 +18,23 @@
 }
 .video-box video {
   width: 100%;
-  // height: 100%;
   vertical-align: middle;
+}
+
+/*----- video-section 影片 (iframe tag) -----*/
+.video-box {
+  width: 100%;
+  aspect-ratio: 560/315;
+  position: relative;
+  border-top-right-radius: 52px;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
 }
 
 /*----- video-section 文字 -----*/

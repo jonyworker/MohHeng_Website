@@ -5532,7 +5532,7 @@ main {
   }
 }
 
-/*----- video-section 影片 -----*/
+/*----- video-section 影片 (video tag) -----*/
 .video-box {
   width: 100%;
   aspect-ratio: 560/315;
@@ -5544,6 +5544,22 @@ main {
 .video-box video {
   width: 100%;
   vertical-align: middle;
+}
+
+/*----- video-section 影片 (iframe tag) -----*/
+.video-box {
+  width: 100%;
+  aspect-ratio: 560/315;
+  position: relative;
+  border-top-right-radius: 52px;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
 }
 
 /*----- video-section 文字 -----*/
@@ -5997,6 +6013,86 @@ main {
 }
 
 /*////////////////////////////////////////////
+===== Intro-01 centricApproach Section START =====
+////////////////////////////////////////////*/
+.intro-section.centricApproach .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.centricApproach .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.centricApproach .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.centricApproach .intro-pic {
+  aspect-ratio: 832/952;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.centricApproach .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.centricApproach .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.centricApproach .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+.intro-section.centricApproach .intro-text p {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.centricApproach .intro-text p {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.centricApproach .intro-text p {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.centricApproach .intro-text {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.centricApproach .intro-text {
+    padding: 20px 0;
+  }
+}
+
+/*////////////////////////////////////////////
 ===== Intro-02 startFrom Section START =====
 ////////////////////////////////////////////*/
 .startFrom .intro-content {
@@ -6429,6 +6525,221 @@ main {
   }
 }
 
+/*----- max-width 576 -----*/
+/*////////////////////////////////////////////
+===== Intro-02 ourProducts Section START =====
+////////////////////////////////////////////*/
+.ourProducts .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourProducts .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourProducts .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.ourProducts .row.mb-128 {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .ourProducts .row.mb-128 {
+    margin-bottom: calc(22.53521vw - 223.5493px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourProducts .row.mb-128 {
+    margin-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.ourProducts .intro-pic {
+  aspect-ratio: 832/952;
+}
+
+.ourProducts .intro-pic.big {
+  aspect-ratio: 1664/739;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourProducts .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourProducts .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourProducts .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourProducts .intro-text {
+    margin: 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.ourProducts .intro-text {
+    margin: 20px 0;
+  }
+}
+
+/*////////////////////////////////////////////
+===== Intro-02 ourStrengths Section START =====
+////////////////////////////////////////////*/
+.ourStrengths .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourStrengths .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourStrengths .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.ourStrengths .row.mb-128 {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .ourStrengths .row.mb-128 {
+    margin-bottom: calc(22.53521vw - 223.5493px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourStrengths .row.mb-128 {
+    margin-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.ourStrengths .intro-pic {
+  aspect-ratio: 1664/739;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.ourStrengths .intro-text h2 {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourStrengths .intro-text h2 {
+    margin-bottom: calc(4.0404vw + 16.9697px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourStrengths .intro-text h2 {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.ourStrengths .intro-text {
+    margin: 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.ourStrengths .intro-text {
+    margin: 20px 0;
+  }
+}
+
+/*///////////////////////////////////////////////
+===== Intro-02 ourInfrastructures Section START =====
+///////////////////////////////////////////////*/
+.intro-section.ourInfrastructures .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourInfrastructures .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourInfrastructures .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.intro-section.ourInfrastructures .row.mb-128 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourInfrastructures .row.mb-128 {
+    margin-bottom: calc(13.63636vw - 84.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourInfrastructures .row.mb-128 {
+    margin-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.ourInfrastructures .intro-pic {
+  aspect-ratio: 1664/739;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 /*/////////////////////////////////////////
 ===== Intro-01 ourAsset Section START =====
