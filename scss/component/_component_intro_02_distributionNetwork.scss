@@ -1,0 +1,36 @@
+/*///////////////////////////////////////////////
+===== Intro-02 distributionNetwork Section START =====
+///////////////////////////////////////////////*/
+.distributionNetwork .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+.distributionNetwork .row.mb-128 {
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 128px);
+}
+
+/*----- intro-section 圖片 -----*/
+.distributionNetwork .intro-pic {
+  aspect-ratio: 1679/863;
+  border-radius: 0;
+}
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

@@ -1,0 +1,40 @@
+/*////////////////////////////////////////////
+===== Intro-07 weLocated Section START =====
+////////////////////////////////////////////*/
+.weLocated .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- video-section 影片 (iframe tag) -----*/ 
+
+.intro-section.weLocated .map-content {
+  width: 100%;
+  aspect-ratio: 1663/878;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-section.weLocated .map-content iframe {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

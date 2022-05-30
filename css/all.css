@@ -6056,22 +6056,6 @@ main {
   }
 }
 
-.intro-section.centricApproach .intro-text p {
-  margin-bottom: 48px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-section.centricApproach .intro-text p {
-    margin-bottom: calc(4.0404vw + 16.9697px);
-  }
-}
-
-@media screen and (min-width: 1560px) {
-  .intro-section.centricApproach .intro-text p {
-    margin-bottom: 80px;
-  }
-}
-
 /*/////////////////////////////
 ===== Desktop First START =====
 /////////////////////////////*/
@@ -6088,6 +6072,53 @@ main {
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
   .intro-section.centricApproach .intro-text {
+    padding: 20px 0;
+  }
+}
+
+/*///////////////////////////////////////////////////
+===== Intro-01 productsTransition Section START =====
+///////////////////////////////////////////////////*/
+.intro-section.productsTransition .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.productsTransition .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.productsTransition .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.productsTransition .intro-pic {
+  aspect-ratio: 832/952;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .intro-section.productsTransition .intro-text {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {
+  .intro-section.productsTransition .intro-text {
     padding: 20px 0;
   }
 }
@@ -6731,6 +6762,58 @@ main {
 /*----- intro-section 圖片 -----*/
 .intro-section.ourInfrastructures .intro-pic {
   aspect-ratio: 1664/739;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+/*///////////////////////////////////////////////
+===== Intro-02 distributionNetwork Section START =====
+///////////////////////////////////////////////*/
+.distributionNetwork .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .distributionNetwork .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .distributionNetwork .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.distributionNetwork .row.mb-128 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .distributionNetwork .row.mb-128 {
+    margin-bottom: calc(13.63636vw - 84.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .distributionNetwork .row.mb-128 {
+    margin-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.distributionNetwork .intro-pic {
+  aspect-ratio: 1679/863;
+  border-radius: 0;
 }
 
 /*/////////////////////////////
@@ -7524,4 +7607,50 @@ main {
 .pictureOnly .intro-pic {
   aspect-ratio: 1663/878;
 }
+
+/*////////////////////////////////////////////
+===== Intro-07 weLocated Section START =====
+////////////////////////////////////////////*/
+.weLocated .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .weLocated .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .weLocated .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- video-section 影片 (iframe tag) -----*/
+.intro-section.weLocated .map-content {
+  width: 100%;
+  aspect-ratio: 1663/878;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-section.weLocated .map-content iframe {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
 /*# sourceMappingURL=all.css.map */

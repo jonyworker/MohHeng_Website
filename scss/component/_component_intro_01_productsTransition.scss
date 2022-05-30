@@ -1,20 +1,14 @@
-/*////////////////////////////////////////////
-===== Intro-01 centricApproach Section START =====
-////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////
+===== Intro-01 productsTransition Section START =====
+///////////////////////////////////////////////////*/
 
-.intro-section.centricApproach .intro-content {
+.intro-section.productsTransition .intro-content {
   @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
 }
 
 /*----- intro-section 圖片 -----*/
-.centricApproach .intro-pic {
+.productsTransition .intro-pic {
   aspect-ratio: 832/952;
-}
-
-/*----- intro-section 文字 -----*/
-.intro-section.centricApproach .intro-text h2 {
-  // ▽▽ type01-only ▽▽
-  @include interpolate((margin-bottom), 768px, 1560px, 48px, 80px);
 }
 
 
@@ -29,7 +23,7 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .intro-section.centricApproach .intro-text {
+  .intro-section.productsTransition .intro-text {
     padding: 0 20px 20px 20px;
   }
 }
@@ -39,7 +33,7 @@
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {
-  .intro-section.centricApproach .intro-text {
+  .intro-section.productsTransition .intro-text {
     padding: 20px 0;
   }
 }
