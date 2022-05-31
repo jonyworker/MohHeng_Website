@@ -6824,6 +6824,177 @@ main {
 /*----- max-width 992 -----*/
 /*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
+/*///////////////////////////////////////////////
+===== Intro-02 deliverySystem Section START =====
+///////////////////////////////////////////////*/
+.deliverySystem .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .deliverySystem .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .deliverySystem .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.deliverySystem .row.mb-128 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .deliverySystem .row.mb-128 {
+    margin-bottom: calc(13.63636vw - 84.72727px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .deliverySystem .row.mb-128 {
+    margin-bottom: 128px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.deliverySystem .intro-pic {
+  aspect-ratio: 4000/1133;
+  border-radius: 0;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+/*///////////////////////////////////////////////
+===== Intro-02 ourTerritory Section START =====
+///////////////////////////////////////////////*/
+.ourTerritory .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTerritory .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourTerritory .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-card -----*/
+.ourTerritory .intro-content .intro-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-top-right-radius: 52px;
+}
+
+.ourTerritory .intro-content .intro-card {
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTerritory .intro-content .intro-card {
+    padding: calc(2.52525vw + 0.60606px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourTerritory .intro-content .intro-card {
+    padding: 40px;
+  }
+}
+
+.ourTerritory .intro-text {
+  margin: 0;
+}
+
+/*----- intro-section 圖片 -----*/
+.ourTerritory .intro-pic {
+  aspect-ratio: 100/100;
+}
+
+.ourTerritory .intro-pic {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTerritory .intro-pic {
+    margin-bottom: calc(6.06061vw - 14.54545px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourTerritory .intro-pic {
+    margin-bottom: 80px;
+  }
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .ourTerritory .intro-content .intro-card.horizontal {
+    height: auto;
+  }
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 100%;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-right: 0;
+  }
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-bottom: calc(6.06061vw - 14.54545px);
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 1560px) {
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-bottom: 80px;
+  }
+}
+
+/*----- max-width 576 -----*/
 /*/////////////////////////////////////////
 ===== Intro-01 ourAsset Section START =====
 /////////////////////////////////////////*/
@@ -7643,6 +7814,75 @@ main {
   height: 100%;
   vertical-align: middle;
   position: absolute;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+/*----- max-width 768 -----*/
+/*----- max-width 576 -----*/
+/*////////////////////////////////////////////
+===== Intro-02 moreFeature Section START =====
+////////////////////////////////////////////*/
+.moreFeature .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .moreFeature .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .moreFeature .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-section 圖片 -----*/
+.intro-section.moreFeature .intro-pic {
+  aspect-ratio: 314/314;
+  border-radius: 0;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.moreFeature .intro-text {
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.moreFeature .intro-text {
+    margin-top: calc(1.0101vw + 4.24242px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.moreFeature .intro-text {
+    margin-top: 20px;
+  }
+}
+
+.intro-section.moreFeature .intro-text {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.moreFeature .intro-text {
+    margin-bottom: calc(6.56566vw - 30.42424px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.moreFeature .intro-text {
+    margin-bottom: 72px;
+  }
 }
 
 /*/////////////////////////////

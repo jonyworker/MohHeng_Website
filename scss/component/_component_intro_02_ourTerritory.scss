@@ -1,0 +1,61 @@
+/*///////////////////////////////////////////////
+===== Intro-02 ourTerritory Section START =====
+///////////////////////////////////////////////*/
+.ourTerritory .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-card -----*/
+.ourTerritory .intro-content .intro-card {
+  display: flex;
+  flex-direction: column;
+  @include interpolate(padding, 768px, 1560px, 20px, 40px);
+  height: 100%;
+  background-color: $color-light-grey;
+  border-top-right-radius: 52px;
+}
+
+.ourTerritory .intro-text {
+  margin: 0;
+}
+
+/*----- intro-section 圖片 -----*/
+.ourTerritory .intro-pic {
+  aspect-ratio: 100/100;
+  @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
+}
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .ourTerritory .intro-content .intro-card.horizontal {
+    height: auto;
+  }
+
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 100%;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .ourTerritory .intro-card.horizontal .intro-pic {
+    @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
+    margin-right: 0;
+  }
+}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
