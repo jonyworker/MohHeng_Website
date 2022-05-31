@@ -13,6 +13,8 @@
   height: 100%;
   background-color: $color-light-grey;
   border-top-right-radius: 52px;
+  @include interpolate((margin-right,margin-left), 992px, 1560px, 0px, 11px);
+
 }
 
 .ourTerritory .intro-text {

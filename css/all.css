@@ -6930,6 +6930,25 @@ main {
   }
 }
 
+.ourTerritory .intro-content .intro-card {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .ourTerritory .intro-content .intro-card {
+    margin-right: calc(1.93662vw - 19.21127px);
+    margin-left: calc(1.93662vw - 19.21127px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .ourTerritory .intro-content .intro-card {
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+}
+
 .ourTerritory .intro-text {
   margin: 0;
 }
