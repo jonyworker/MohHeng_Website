@@ -118,6 +118,7 @@ main {
 /*///////////////////////////////
 ===== Base Typography START =====
 ///////////////////////////////*/
+.intro-text h2,
 .intro-section h2 {
   font-family: "century-gothic", sans-serif;
   font-style: normal;
@@ -127,17 +128,20 @@ main {
   color: #D51826;
 }
 
+.intro-text h2,
 .intro-section h2 {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
+  .intro-text h2,
   .intro-section h2 {
     font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
+  .intro-text h2,
   .intro-section h2 {
     font-size: 52px;
   }

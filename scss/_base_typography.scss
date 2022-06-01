@@ -2,7 +2,7 @@
 /*///////////////////////////////
 ===== Base Typography START =====
 ///////////////////////////////*/
-
+.intro-text h2,
 .intro-section h2 {
   @include heading-2;
   color: $color-main;
