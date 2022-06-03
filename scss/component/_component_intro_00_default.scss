@@ -18,20 +18,20 @@
 }
 
 /*----- intro-section 文字設定 -----*/
-.intro-section h2 {
-  @include heading-2;
-  color: $color-main;
-}
+// .intro-section h2 {
+//   @include heading-2;
+//   color: $color-main;
+// }
 
-.intro-section h3 {
-  @include heading-3;
-  color: $color-main;
-}
+// .intro-section h3 {
+//   @include heading-3;
+//   color: $color-main;
+// }
 
-.intro-section p {
-  @include body-text;
-  color: $color-black;
-}
+// .intro-section p {
+//   @include body-text;
+//   color: $color-black;
+// }
 
 .intro-section a {
   display: inline-block;

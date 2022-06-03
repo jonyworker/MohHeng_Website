@@ -86,10 +86,6 @@ a {
   color: #000;
 }
 
-* {
-  outline: 1px solid #5a7;
-}
-
 .container-1920 {
   max-width: 1920px;
 }
@@ -118,8 +114,7 @@ main {
 /*///////////////////////////////
 ===== Base Typography START =====
 ///////////////////////////////*/
-.intro-text h2,
-.intro-section h2 {
+.title-level-1 {
   font-family: "century-gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -128,26 +123,23 @@ main {
   color: #D51826;
 }
 
-.intro-text h2,
-.intro-section h2 {
+.title-level-1 {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-text h2,
-  .intro-section h2 {
+  .title-level-1 {
     font-size: calc(32px + 20 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-text h2,
-  .intro-section h2 {
+  .title-level-1 {
     font-size: 52px;
   }
 }
 
-.intro-section h3 {
+.title-level-2 {
   font-family: "century-gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -156,23 +148,23 @@ main {
   color: #D51826;
 }
 
-.intro-section h3 {
+.title-level-2 {
   font-size: 28px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section h3 {
+  .title-level-2 {
     font-size: calc(28px + 16 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-section h3 {
+  .title-level-2 {
     font-size: 44px;
   }
 }
 
-.intro-section .bold {
+.title-level-3.bold {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -181,23 +173,23 @@ main {
   color: #000;
 }
 
-.intro-section .bold {
+.title-level-3.bold {
   font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section .bold {
+  .title-level-3.bold {
     font-size: calc(25px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-section .bold {
+  .title-level-3.bold {
     font-size: 35px;
   }
 }
 
-.intro-section .medium {
+.title-level-3.medium {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -206,23 +198,23 @@ main {
   color: #000;
 }
 
-.intro-section .medium {
+.title-level-3.medium {
   font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section .medium {
+  .title-level-3.medium {
     font-size: calc(25px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-section .medium {
+  .title-level-3.medium {
     font-size: 35px;
   }
 }
 
-.intro-section .regular {
+.title-level-3.regular {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -231,18 +223,18 @@ main {
   color: #000;
 }
 
-.intro-section .regular {
+.title-level-3.regular {
   font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section .regular {
+  .title-level-3.regular {
     font-size: calc(25px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .intro-section .regular {
+  .title-level-3.regular {
     font-size: 35px;
   }
 }
@@ -5645,81 +5637,6 @@ main {
 }
 
 /*----- intro-section 文字設定 -----*/
-.intro-section h2 {
-  font-family: "century-gothic", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.23;
-  letter-spacing: 0;
-  color: #D51826;
-}
-
-.intro-section h2 {
-  font-size: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-section h2 {
-    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-section h2 {
-    font-size: 52px;
-  }
-}
-
-.intro-section h3 {
-  font-family: "century-gothic", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.23;
-  letter-spacing: 0;
-  color: #D51826;
-}
-
-.intro-section h3 {
-  font-size: 28px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-section h3 {
-    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-section h3 {
-    font-size: 44px;
-  }
-}
-
-.intro-section p {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0;
-  color: #000;
-}
-
-.intro-section p {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .intro-section p {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
-  }
-}
-
-@media screen and (min-width: 1536px) {
-  .intro-section p {
-    font-size: 28px;
-  }
-}
-
 .intro-section a {
   display: inline-block;
   font-family: "DM Sans", sans-serif;
@@ -7105,18 +7022,18 @@ main {
 }
 
 /*----- intro-section 文字 -----*/
-.intro-section.promotions .intro-text h3 {
+.intro-section.promotions .intro-text .title-level-2 {
   margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .intro-section.promotions .intro-text h3 {
+  .intro-section.promotions .intro-text .title-level-2 {
     margin-bottom: calc(2.0202vw + 16.48485px);
   }
 }
 
 @media screen and (min-width: 1560px) {
-  .intro-section.promotions .intro-text h3 {
+  .intro-section.promotions .intro-text .title-level-2 {
     margin-bottom: 48px;
   }
 }
@@ -7164,6 +7081,141 @@ main {
   }
 }
 
+/*----- max-width 576 -----*/
+/*///////////////////////////////////////////////
+===== Intro-02 professionalManagement Section START =====
+///////////////////////////////////////////////*/
+.professionalManagement .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .professionalManagement .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .professionalManagement .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-card -----*/
+.professionalManagement .intro-content .intro-card {
+  height: 100%;
+  background-color: #fff;
+  border-top-right-radius: 52px;
+}
+
+.professionalManagement .intro-content .intro-card {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .professionalManagement .intro-content .intro-card {
+    margin-right: calc(1.93662vw - 19.21127px);
+    margin-left: calc(1.93662vw - 19.21127px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .professionalManagement .intro-content .intro-card {
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+}
+
+.professionalManagement .intro-content .intro-card.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*----- intro-section 圖片 -----*/
+.professionalManagement .intro-pic.small-pic {
+  width: 43%;
+  aspect-ratio: 350/350;
+}
+
+.professionalManagement .intro-pic img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*----- intro-section 文字 -----*/
+.professionalManagement .intro-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0;
+  padding: 20px;
+}
+
+.intro-section.professionalManagement .title-level-2 {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.professionalManagement .title-level-2 {
+    margin-bottom: calc(2.0202vw + 16.48485px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.professionalManagement .title-level-2 {
+    margin-bottom: 48px;
+  }
+}
+
+.intro-section.professionalManagement .title-level-3 {
+  color: #D51826;
+}
+
+.intro-section.professionalManagement .title-level-3 {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.professionalManagement .title-level-3 {
+    margin-bottom: calc(2.0202vw + 16.48485px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.professionalManagement .title-level-3 {
+    margin-bottom: 48px;
+  }
+}
+
+.professionalManagement .intro-text.medium {
+  color: #D51826;
+  margin-bottom: 24px;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .professionalManagement .intro-content .intro-card.d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 /*/////////////////////////////////////////
 ===== Intro-01 ourAsset Section START =====
@@ -7633,7 +7685,6 @@ main {
 
 .intro-section.ourPeople .card-item:last-of-type .intro-text p {
   padding-right: 30%;
-  background-color: #f00;
 }
 
 /*/////////////////////////////

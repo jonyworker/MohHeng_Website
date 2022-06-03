@@ -2,25 +2,23 @@
 /*///////////////////////////////
 ===== Base Typography START =====
 ///////////////////////////////*/
-.intro-text h2,
-.intro-section h2 {
+.title-level-1 {
   @include heading-2;
   color: $color-main;
 }
-
-.intro-section h3 {
+.title-level-2 {
   @include heading-3;
   color: $color-main;
 }
-.intro-section .bold {
+.title-level-3.bold {
   @include heading-4-B;
   color: $color-black;
 }
-.intro-section .medium {
+.title-level-3.medium {
   @include heading-4-M;
   color: $color-black;
 }
-.intro-section .regular {
+.title-level-3.regular {
   @include heading-4-R;
   color: $color-black;
 }

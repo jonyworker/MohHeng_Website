@@ -1,39 +1,50 @@
 /*///////////////////////////////////////////////
-===== Intro-02 promotions Section START =====
+===== Intro-02 professionalManagement Section START =====
 ///////////////////////////////////////////////*/
-.promotions .intro-content {
+.professionalManagement .intro-content {
   @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
 }
 
 /*----- intro-card -----*/
-.promotions .intro-content .intro-card {
-  display: flex;
-  flex-direction: column;
-  @include interpolate(padding, 992px, 1560px, 20px, 40px);
+.professionalManagement .intro-content .intro-card {
   height: 100%;
   background-color: $color-white;
   border-top-right-radius: 52px;
   @include interpolate((margin-right, margin-left), 992px, 1560px, 0px, 11px);
 }
+.professionalManagement .intro-content .intro-card.d-flex {
+  display: flex;
+  align-items: center;
+}
 
 
 /*----- intro-section 圖片 -----*/
-.promotions .intro-text {
-  margin: 0;
+.professionalManagement .intro-pic.small-pic {
+  width: 43%;
+  aspect-ratio: 350/350;
 }
-.promotions .intro-text .medium {
-  color: $color-main;
-  // @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
-  margin-bottom: 24px;
-}
-.promotions .intro-pic img {
+.professionalManagement .intro-pic img {
   object-fit: contain;
 }
 
 /*----- intro-section 文字 -----*/
-.intro-section.promotions .intro-text .title-level-2 {
+.professionalManagement .intro-text {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+}
+.intro-section.professionalManagement .title-level-2 {
   @include interpolate(margin-bottom, 768px, 1560px, 32px, 48px);
 }
+.intro-section.professionalManagement .title-level-3 {
+  @include interpolate(margin-bottom, 768px, 1560px, 32px, 48px);
+  color: $color-main;
+}
+.professionalManagement .intro-text.medium {
+  color: $color-main;
+  margin-bottom: 24px;
+}
+
 
 /*/////////////////////////////
 ===== Desktop First START =====
@@ -46,24 +57,13 @@
 
 /*----- max-width 992 -----*/
 @media screen and (max-width: 992px) {
-  .promotions .intro-content .intro-card.horizontal {
-    height: auto;
-  }
-  .promotions .intro-card.horizontal .intro-pic {
-    margin-bottom: 0;
-    margin-right: 20px;
-    width: 100%;
+  .professionalManagement .intro-content .intro-card.d-flex {
+    flex-direction: column;
   }
 }
 
 /*----- max-width 768 -----*/
-@media screen and (max-width: 768px) {
-  .promotions .intro-pic,
-  .promotions .intro-card.horizontal .intro-pic {
-    @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
-    margin-right: 0;
-  }
-}
+@media screen and (max-width: 768px) {}
 
 /*----- max-width 576 -----*/
 @media screen and (max-width: 576px) {}
