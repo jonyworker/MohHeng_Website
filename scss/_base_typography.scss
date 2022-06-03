@@ -12,15 +12,15 @@
   @include heading-3;
   color: $color-main;
 }
-.intro-section h3.bold {
+.intro-section .bold {
   @include heading-4-B;
   color: $color-black;
 }
-.intro-section h3.medium {
+.intro-section .medium {
   @include heading-4-M;
   color: $color-black;
 }
-.intro-section h3.regular {
+.intro-section .regular {
   @include heading-4-R;
   color: $color-black;
 }

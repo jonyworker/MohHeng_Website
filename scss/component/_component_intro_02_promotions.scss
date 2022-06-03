@@ -1,0 +1,72 @@
+/*///////////////////////////////////////////////
+===== Intro-02 promotions Section START =====
+///////////////////////////////////////////////*/
+.promotions .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-card -----*/
+.promotions .intro-content .intro-card {
+  display: flex;
+  flex-direction: column;
+  @include interpolate(padding, 992px, 1560px, 20px, 40px);
+  height: 100%;
+  background-color: $color-white;
+  border-top-right-radius: 52px;
+  @include interpolate((margin-right, margin-left), 992px, 1560px, 0px, 11px);
+}
+
+
+/*----- intro-section 圖片 -----*/
+.promotions .intro-text {
+  margin: 0;
+}
+.promotions .intro-text .medium {
+  color: $color-main;
+  // @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
+  margin-bottom: 24px;
+}
+.promotions .intro-pic img {
+  object-fit: contain;
+}
+
+/*----- intro-section 文字 -----*/
+.intro-section.promotions .intro-text h3 {
+  // @include interpolate(margin-bottom, 768px, 1560px, 20px, 64px);
+  // @include interpolate(margin-bottom, 768px, 1560px, 80px, 128px);
+    @include interpolate(margin-bottom, 768px, 1560px, 32px, 48px);
+}
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .promotions .intro-content .intro-card.horizontal {
+    height: auto;
+  }
+  .promotions .intro-card.horizontal .intro-pic {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 100%;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .promotions .intro-pic,
+  .promotions .intro-card.horizontal .intro-pic {
+    @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
+    margin-right: 0;
+  }
+}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
