@@ -1,0 +1,78 @@
+/*///////////////////////////////////////////////
+===== Intro-02 ourService Section START =====
+///////////////////////////////////////////////*/
+.ourService .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+.ourService .row.mb-128 {
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 128px);
+}
+/*----- intro-section 文字 -----*/
+
+.intro-section.ourService .intro-text .title-level-1 {
+  @include interpolate(margin-bottom, 768px, 1560px, 48px, 80px);
+}
+.ourService .intro-text .title-level-3.medium {
+  margin-bottom: 12px;
+  color: $color-main;
+}
+/*----- intro-section 圖片 -----*/
+.ourService .intro-pic {
+  aspect-ratio: 1920/310;
+  border-radius: 0;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.ourService .intro-pic img {
+  height: auto;
+}
+
+
+/*----- intro-section list -----*/
+.ourService .intro-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ourService .intro-item {
+  flex: 1 1 273px;
+  min-width: 33.333333%;
+}
+.ourService .intro-item:nth-of-type(-n+3) {
+  @include interpolate(padding-bottom, 768px, 1560px, 20px, 80px);
+  border-bottom: 1px solid $color-border;
+  @include interpolate(margin-bottom, 768px, 1560px, 20px, 80px);
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .ourService .intro-item:nth-of-type(-n+4) {
+    @include interpolate(padding-bottom, 768px, 1560px, 20px, 80px);
+    border-bottom: 1px solid $color-border;
+    @include interpolate(margin-bottom, 768px, 1560px, 20px, 80px);
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {
+  .intro-section.ourService .intro-text {
+    margin: 0 20px;
+  }
+  .ourService .intro-item:nth-of-type(-n+5) {
+    @include interpolate(padding-bottom, 768px, 1560px, 20px, 80px);
+    border-bottom: 1px solid $color-border;
+    @include interpolate(margin-bottom, 768px, 1560px, 20px, 80px);
+  }
+}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}

@@ -23,12 +23,12 @@
   color: $color-black;
 }
 
-.intro-section p {
+.body-text {
   @include body-text;
   color: $color-black;
 }
 
-.intro-section a {
+.intro-link {
   display: inline-block;
   @include body-text;
   color: $color-white;

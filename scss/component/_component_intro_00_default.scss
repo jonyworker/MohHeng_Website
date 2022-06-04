@@ -54,6 +54,21 @@
   object-fit: cover;
 }
 
+/*----- scrollbar 設定 -----*/
+.card-clip {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  overflow-x: overlay;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+}
+.card-clip::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
 
 
 
