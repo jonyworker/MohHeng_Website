@@ -18,9 +18,7 @@
 
 
 /*----- intro-section 圖片 -----*/
-.promotions .intro-text {
-  margin: 0;
-}
+
 .promotions .intro-text .medium {
   color: $color-main;
   // @include interpolate(margin-bottom, 768px, 1560px, 32px, 80px);
@@ -31,6 +29,9 @@
 }
 
 /*----- intro-section 文字 -----*/
+.promotions .intro-text {
+  margin: 0;
+}
 .intro-section.promotions .intro-text .title-level-2 {
   @include interpolate(margin-bottom, 768px, 1560px, 32px, 48px);
 }

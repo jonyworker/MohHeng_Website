@@ -293,6 +293,101 @@ main {
   }
 }
 
+/*----   flex-box   ----*/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-jc-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-align-end {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-align-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 /*!
  * Bootstrap Grid v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7023,10 +7118,6 @@ main {
 }
 
 /*----- intro-section 圖片 -----*/
-.promotions .intro-text {
-  margin: 0;
-}
-
 .promotions .intro-text .medium {
   color: #D51826;
   margin-bottom: 24px;
@@ -7038,6 +7129,10 @@ main {
 }
 
 /*----- intro-section 文字 -----*/
+.promotions .intro-text {
+  margin: 0;
+}
+
 .intro-section.promotions .intro-text .title-level-2 {
   margin-bottom: 32px;
 }
@@ -7445,6 +7540,134 @@ main {
   }
 }
 
+/*----- max-width 576 -----*/
+/*///////////////////////////////////////////////
+===== Intro-02 properInfrastructure Section START =====
+///////////////////////////////////////////////*/
+.properInfrastructure .intro-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .properInfrastructure .intro-content {
+    padding-top: calc(5.55556vw - 22.66667px);
+    padding-bottom: calc(5.55556vw - 22.66667px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .properInfrastructure .intro-content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*----- intro-card -----*/
+.properInfrastructure .intro-content .intro-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #fff;
+  border-top-right-radius: 52px;
+}
+
+/*----- intro-section 文字 -----*/
+.properInfrastructure .intro-text {
+  padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .properInfrastructure .intro-text {
+    padding: calc(3.52113vw - 14.92958px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .properInfrastructure .intro-text {
+    padding: 40px;
+  }
+}
+
+.properInfrastructure .intro-text.square {
+  width: 60%;
+  margin: 0;
+}
+
+.properInfrastructure .intro-text.rectangular {
+  width: 30%;
+  margin: 0;
+}
+
+.intro-section.properInfrastructure .intro-text .title-level-2 {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.properInfrastructure .intro-text .title-level-2 {
+    margin-bottom: calc(2.0202vw + 16.48485px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.properInfrastructure .intro-text .title-level-2 {
+    margin-bottom: 48px;
+  }
+}
+
+.properInfrastructure .title-level-3.medium {
+  color: #D51826;
+  margin-bottom: 24px;
+}
+
+/*----- intro-section 圖片 -----*/
+.properInfrastructure .intro-pic.square {
+  width: 40%;
+  aspect-ratio: 350/350;
+}
+
+.properInfrastructure .intro-pic.rectangular {
+  width: 70%;
+  aspect-ratio: 4707/1467;
+}
+
+.properInfrastructure .intro-pic img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+}
+
+.properInfrastructure .intro-pic.intro-pic.rectangular img {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+/*----- max-width 1200 -----*/
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .properInfrastructure .intro-text.rectangular {
+    width: 60%;
+    margin: 0;
+  }
+  .properInfrastructure .intro-pic.rectangular {
+    width: 40%;
+    aspect-ratio: 350/350;
+  }
+  .properInfrastructure .intro-pic.intro-pic.rectangular img {
+    left: -80px;
+  }
+}
+
+/*----- max-width 768 -----*/
 /*----- max-width 576 -----*/
 /*/////////////////////////////////////////
 ===== Intro-01 ourAsset Section START =====

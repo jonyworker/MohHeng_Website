@@ -6,6 +6,7 @@
 @import "_base_type_scale";
 @import "_base_fluid_calculator";//置換成這個
 @import "_base_typography";
+@import "_base_flex_box";
 
 // 載入bootstrap 設定
 @import "bootstrap-grid";
@@ -40,7 +41,7 @@
 @import "./component/component_intro_02_promotions";
 @import "./component/component_intro_02_professionalManagement";
 @import "./component/component_intro_02_oreService";
-
+@import "./component/component_intro_02_properInfrastructure";
 
 
 @import "./component/component_intro_03_ourAsset";

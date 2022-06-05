@@ -1,0 +1,93 @@
+/*///////////////////////////////////////////////
+===== Intro-02 properInfrastructure Section START =====
+///////////////////////////////////////////////*/
+.properInfrastructure .intro-content {
+  @include interpolate((padding-top, padding-bottom), 768px, 1560px, 20px, 64px);
+}
+
+/*----- intro-card -----*/
+.properInfrastructure .intro-content .intro-card {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: $color-white;
+  border-top-right-radius: 52px;
+  
+}
+
+
+
+/*----- intro-section 文字 -----*/
+.properInfrastructure .intro-text {
+  @include interpolate(padding, 992px, 1560px, 20px, 40px);
+} 
+.properInfrastructure .intro-text.square {
+  width: 60%;
+  margin: 0;
+}
+.properInfrastructure .intro-text.rectangular {
+  width: 30%;
+  margin: 0;
+}
+.intro-section.properInfrastructure .intro-text .title-level-2 {
+  @include interpolate(margin-bottom, 768px, 1560px, 32px, 48px);
+}
+.properInfrastructure .title-level-3.medium {
+  color: $color-main;
+  margin-bottom: 24px;
+}
+
+/*----- intro-section 圖片 -----*/
+.properInfrastructure .intro-pic.square {
+  width: 40%;
+  aspect-ratio: 350/350;
+}
+.properInfrastructure .intro-pic.rectangular {
+  width: 70%;
+  aspect-ratio: 4707/1467;
+}
+.properInfrastructure .intro-pic img {
+  object-fit: contain;
+  width: auto;
+}
+.properInfrastructure .intro-pic.intro-pic.rectangular img {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+
+/*/////////////////////////////
+===== Desktop First START =====
+/////////////////////////////*/
+/*----- max-width 1536 -----*/
+@media screen and (max-width: 1536px) {}
+
+/*----- max-width 1200 -----*/
+@media screen and (max-width: 1200px) {}
+
+/*----- max-width 992 -----*/
+@media screen and (max-width: 992px) {
+  .properInfrastructure .intro-text.rectangular {
+    width: 60%;
+    margin: 0;
+  }
+  .properInfrastructure .intro-pic.rectangular {
+    width: 40%;
+    aspect-ratio: 350/350;
+    
+  }
+  .properInfrastructure .intro-pic.intro-pic.rectangular img {
+    left: -80px;
+  }
+}
+
+/*----- max-width 768 -----*/
+@media screen and (max-width: 768px) {}
+
+/*----- max-width 576 -----*/
+@media screen and (max-width: 576px) {}
