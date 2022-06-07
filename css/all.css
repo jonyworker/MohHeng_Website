@@ -71,6 +71,8 @@ img {
 /*----- 字體 - heading-3 (44px) -----*/
 /*----- 字體 - heading-4 (35px) -----*/
 /*----- 字體 - body-text (28px) -----*/
+/*----- 字體 - nav-text (24px) -----*/
+/*----- 字體 - caption-text (20px) -----*/
 /*/////////////////////////
 ===== Variables START =====
 /////////////////////////*/
@@ -129,13 +131,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .title-level-1 {
-    font-size: calc(32px + 20 * ((100vw - 768px) / 768));
+    font-size: calc(32px + 16 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .title-level-1 {
-    font-size: 52px;
+    font-size: 48px;
   }
 }
 
@@ -149,18 +151,18 @@ main {
 }
 
 .title-level-2 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 @media screen and (min-width: 768px) {
   .title-level-2 {
-    font-size: calc(28px + 16 * ((100vw - 768px) / 768));
+    font-size: calc(26px + 10 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .title-level-2 {
-    font-size: 44px;
+    font-size: 36px;
   }
 }
 
@@ -174,18 +176,18 @@ main {
 }
 
 .title-level-3.bold {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
   .title-level-3.bold {
-    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(22px + 6 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .title-level-3.bold {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 
@@ -199,18 +201,18 @@ main {
 }
 
 .title-level-3.medium {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
   .title-level-3.medium {
-    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(22px + 6 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .title-level-3.medium {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 
@@ -224,18 +226,18 @@ main {
 }
 
 .title-level-3.regular {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
   .title-level-3.regular {
-    font-size: calc(25px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(22px + 6 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .title-level-3.regular {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 
@@ -249,18 +251,18 @@ main {
 }
 
 .body-text {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .body-text {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(16px + 2 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .body-text {
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 
@@ -278,18 +280,18 @@ main {
 }
 
 .intro-link {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .intro-link {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(16px + 2 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .intro-link {
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 
@@ -5746,18 +5748,18 @@ main {
 }
 
 .intro-section a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .intro-section a {
-    font-size: calc(18px + 10 * ((100vw - 768px) / 768));
+    font-size: calc(16px + 2 * ((100vw - 768px) / 768));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .intro-section a {
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 

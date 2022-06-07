@@ -17,7 +17,8 @@
 @mixin heading-2 {
   @include font-info ($font-Century-Gothic,normal, null, 700, 1.23, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 32px, 52px);
+  // @include fluid-type(768px, 1536px, 32px, 52px);  old
+  @include fluid-type(768px, 1536px, 32px, 48px);
 }
 
 /*----- 字體 - heading-3 (44px) -----*/
@@ -25,7 +26,8 @@
 @mixin heading-3 {
   @include font-info ($font-Century-Gothic, normal, null, 700, 1.23, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 28px, 44px);
+  // @include fluid-type(768px, 1536px, 28px, 44px); old
+  @include fluid-type(768px, 1536px, 26px, 36px);
 }
 
 /*----- 字體 - heading-4 (35px) -----*/
@@ -33,17 +35,20 @@
 @mixin heading-4-B {
   @include font-info ($font-DMsans, normal, null, 700, 1.37, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 25px, 35px);
+  // @include fluid-type(768px, 1536px, 25px, 35px); old
+  @include fluid-type(768px, 1536px, 22px, 28px);
 }
 @mixin heading-4-M {
   @include font-info ($font-DMsans, normal, null, 500, 1.37, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 25px, 35px);
+  // @include fluid-type(768px, 1536px, 25px, 35px); old
+  @include fluid-type(768px, 1536px, 22px, 28px);
 }
 @mixin heading-4-R {
   @include font-info ($font-DMsans, normal, null, 400, 1.37, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 25px, 35px);
+  // @include fluid-type(768px, 1536px, 25px, 35px); old
+  @include fluid-type(768px, 1536px, 22px, 28px);
 }
 
 /*----- 字體 - body-text (28px) -----*/
@@ -51,5 +56,31 @@
 @mixin body-text {
   @include font-info ($font-DMsans, normal, null, 400, 1.4, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
-  @include fluid-type(768px, 1536px, 18px, 28px);
+  // @include fluid-type(768px, 1536px, 18px, 28px); old
+  @include fluid-type(768px, 1536px, 16px, 18px);
 }
+
+/*----- 字體 - nav-text (24px) -----*/
+// TODO:mixin 字體 - nav-text
+@mixin nav-text-B {
+  @include font-info ($font-Century-Gothic, normal, null, 700, 1.2, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // @include fluid-type(768px, 1536px, 20px, 24px); old
+  @include fluid-type(768px, 1536px, 20px, 22px);
+}
+
+@mixin nav-text-L {
+  @include font-info ($font-Century-Gothic, normal, null, 400, 1.2, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // @include fluid-type(768px, 1536px, 20px, 24px); old
+  @include fluid-type(768px, 1536px, 20px, 22px);
+}
+
+/*----- 字體 - caption-text (20px) -----*/
+@mixin caption-text {
+  @include font-info ($font-DMsans, normal, null, 400, 2, 0);
+  // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
+  // @include fluid-type(768px, 1536px, 14px, 20px); old
+  @include fluid-type(768px, 1536px, 14px, 18px);
+}
+
