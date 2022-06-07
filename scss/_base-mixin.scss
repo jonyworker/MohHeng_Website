@@ -66,14 +66,14 @@
   @include font-info ($font-Century-Gothic, normal, null, 700, 1.2, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   // @include fluid-type(768px, 1536px, 20px, 24px); old
-  @include fluid-type(768px, 1536px, 20px, 22px);
+  @include fluid-type(992px, 1536px, 18px, 22px);
 }
 
 @mixin nav-text-L {
   @include font-info ($font-Century-Gothic, normal, null, 400, 1.2, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   // @include fluid-type(768px, 1536px, 20px, 24px); old
-  @include fluid-type(768px, 1536px, 20px, 22px);
+  @include fluid-type(992px, 1536px, 18px, 22px);
 }
 
 /*----- 字體 - caption-text (20px) -----*/
@@ -81,6 +81,6 @@
   @include font-info ($font-DMsans, normal, null, 400, 2, 0);
   // 超級文字縮放公式 minWidth(px), maxWidth(px), minFont(px), maxFont(px)
   // @include fluid-type(768px, 1536px, 14px, 20px); old
-  @include fluid-type(768px, 1536px, 14px, 18px);
+  @include fluid-type(992px, 1536px, 14px, 18px);
 }
 
