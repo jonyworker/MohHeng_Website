@@ -5309,18 +5309,18 @@ main {
 }
 
 .logo-set p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 992px) {
   .logo-set p {
-    font-size: calc(18px + 4 * ((100vw - 992px) / 544));
+    font-size: calc(16px + 2 * ((100vw - 992px) / 544));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .logo-set p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -5346,18 +5346,18 @@ main {
 }
 
 .main-nav a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 992px) {
   .main-nav a {
-    font-size: calc(18px + 4 * ((100vw - 992px) / 544));
+    font-size: calc(16px + 2 * ((100vw - 992px) / 544));
   }
 }
 
 @media screen and (min-width: 1536px) {
   .main-nav a {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
