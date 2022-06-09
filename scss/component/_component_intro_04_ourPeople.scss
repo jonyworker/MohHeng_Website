@@ -15,11 +15,23 @@
 .intro-section.ourPeople .card-list {
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+}
+.intro-section.ourPeople .card-list::after {
+  content:"";
+  position: absolute;
+  left: 0;
+  // right: 0;
+  @include interpolate(top, 768px, 1560px, 52px, 125px);
+  @include interpolate(width, 768px, 1560px, 1000px, 1400px);
+  border: 1px dashed $color-main;
+  z-index: 1;
 }
 
 .intro-section.ourPeople .card-item {
   flex: 0 0 100%; //grow shrink basic
   @include interpolate(max-width, 768px, 1560px, 280px, 410px);
+  z-index: 2;
 }
 //兩個 director的 card item
 .intro-section.ourPeople .card-item:last-of-type {

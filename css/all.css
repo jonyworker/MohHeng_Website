@@ -5268,7 +5268,7 @@ main {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   background-color: #fff;
   border-bottom: 1px solid #70707067;
 }
@@ -7989,12 +7989,54 @@ main {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  position: relative;
+}
+
+.intro-section.ourPeople .card-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border: 1px dashed #D51826;
+  z-index: 1;
+}
+
+.intro-section.ourPeople .card-list::after {
+  top: 52px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-list::after {
+    top: calc(9.21717vw - 18.78788px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-list::after {
+    top: 125px;
+  }
+}
+
+.intro-section.ourPeople .card-list::after {
+  width: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section.ourPeople .card-list::after {
+    width: calc(50.50505vw + 612.12121px);
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .intro-section.ourPeople .card-list::after {
+    width: 1400px;
+  }
 }
 
 .intro-section.ourPeople .card-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  z-index: 2;
 }
 
 .intro-section.ourPeople .card-item {
